@@ -20,7 +20,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
         })
 
         // nested list with custom controller
-        .state('home.list', {
+        .state('list', {
             url: '/list',
             templateUrl: 'templates/app.html',
 
