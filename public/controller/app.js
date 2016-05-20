@@ -46,5 +46,11 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
             templateUrl: 'templates/login.html'
         })
 
+        .state('dhulikhel', {
+
+            url: '/dhulikhel',
+            templateUrl: 'templates/dhulikhel.html'
+        })
+
 
 }])
