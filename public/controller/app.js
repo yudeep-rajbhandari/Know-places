@@ -6,25 +6,45 @@ var app= angular.module('knowplaces', ['ui.router']);
 
 
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($stateProvider, $urlRouterProvider, $httpProvider) {
 
-    $urlRouterProvider.otherwise('/home');
 
+    $urlRouterProvider.otherwise('/homepage');
     $stateProvider
 
-        // HOME STATES AND NESTED VIEWS ========================================
-        .state('home.homepage', {
-
-            url: '/homepage',
-            templateUrl: 'templates/homepage.html'
-        })
-
+        // HOME STATES AND NESTED VIEWS =======================================
 
         .state('home', {
             url: '/home',
             templateUrl: 'templates/navbar.html'
 
         })
+        .state('homepage', {
+
+            url: '/homepage',
+            templateUrl: 'templates/homepage.html'
+        })
+
+        .state('about', {
+
+        url: '/about',
+        templateUrl: 'templates/about.html'
+    })
+        .state('projects', {
+
+            url: '/projects',
+            templateUrl: 'templates/projects.html'
+        })
+        .state('contact', {
+
+            url: '/contact',
+            templateUrl: 'templates/contact.html'
+        })
+        .state('login', {
+
+            url: '/login',
+            templateUrl: 'templates/login.html'
+        })
 
 
-});
+}])
