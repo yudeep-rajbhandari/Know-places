@@ -13,16 +13,16 @@ app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
 
         // HOME STATES AND NESTED VIEWS ========================================
-        .state('home', {
-            //abstract: true,
-            url: '/home',
+        .state('home.homepage', {
+
+            url: '/homepage',
             templateUrl: 'templates/homepage.html'
         })
 
-        // nested list with custom controller
-        .state('list', {
-            url: '/list',
-            templateUrl: 'templates/app.html',
+
+        .state('home', {
+            url: '/home',
+            templateUrl: 'templates/navbar.html'
 
         })
 
