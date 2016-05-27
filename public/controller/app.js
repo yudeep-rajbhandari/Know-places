@@ -52,6 +52,12 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
             url: '/dhulikhel',
             templateUrl: 'templates/dhulikhel.html'
         })
+        .state('home.sidebar', {
+
+            url: '/sidebar',
+            templateUrl: 'templates/sidebar.html'
+        })
 
 
 }])
+

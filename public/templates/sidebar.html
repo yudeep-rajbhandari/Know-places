@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KNOW PLACES</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<a href="#" class="btn btn-success" id="menu-toggle">toggle menu</a>
+<div id="wrapper">
+    <!--sidebar-->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li><a href="#">Rafting</a></li>
+            <li><a href="#">hiking</a></li>
+            <li><a href="#">trekking</a></li>
+            <li><a href="#">sight seeing</a></li>
+            <li><a href="#">jungle safari</a></li>
+        </ul>
+    </div>
+
+    <!--body-->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h1>sidebar sidebar sidebar</h1>
+                    <p>sidebar sidebar sidebarsidebar sidebar sidebarsidebar sidebar sidebar
+                        sidebar sidebar sidebarsidebar sidebar sidebarsidebar sidebar sidebar
+                        sidebar sidebar sidebarsidebar sidebar sidebarsidebar sidebar sidebar</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--menu toggle script-->
+<script type="text/javascript">
+    $("#menu-toggle").click ( function (e){
+        e.preventDefault ();
+        $("#wrapper").toggleClass("menuDisplayed");
+    });
+</script>
+
+
+</body>
+</html>
