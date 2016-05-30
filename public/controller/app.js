@@ -57,6 +57,11 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
             url: '/sidebar',
             templateUrl: 'templates/sidebar.html'
         })
+        .state('home.form', {
+
+            url: '/form',
+            templateUrl: 'templates/form.html'
+        })
 
 
 }])
