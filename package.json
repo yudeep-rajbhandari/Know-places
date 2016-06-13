@@ -14,6 +14,7 @@
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
     "bower": "~1.7.1",
-    "mongoose": "4.0.x"
+    "mongoose": "4.0.x",
+    "angularjs-toaster":"0.4.18"
   }
 }

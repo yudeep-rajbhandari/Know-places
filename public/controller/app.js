@@ -2,7 +2,7 @@
  * Created by linux on 5/17/16.
  */
 
-var app= angular.module('knowplaces', ['ui.router']);
+var app= angular.module('knowplaces', ['ui.router','BackendService']);
 
 
 
@@ -60,9 +60,38 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
         .state('home.form', {
 
             url: '/form',
-            templateUrl: 'templates/form.html'
+            templateUrl: 'templates/form.html',
+            controller:"signUpController"
+        })
+        .state('home.profile', {
+
+            url: '/profile',
+            templateUrl: 'templates/profile.html',
+            controller:"signUpController"
         })
 
 
 }])
 
+app.controller('signUpController',['$scope','$http','service','$state',
+function($scope,$http,service,$state){
+    $scope.formdata={};
+$scope.getInfo=function(){
+    service.save({userdata:$scope.formdata},"/users/signup",function(err,response){
+        if (!err) {
+            $scope.response = response;
+            console.log(response);
+            $state.go("home.profile");
+
+
+        } else {
+            console.log(response);
+        }
+
+    })
+
+
+    }
+}]
+
+)
