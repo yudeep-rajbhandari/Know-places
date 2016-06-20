@@ -30,7 +30,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
         url: '/about',
         templateUrl: 'templates/about.html'
-    })
+       })
         .state('home.projects', {
 
             url: '/projects',
@@ -44,7 +44,8 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
         .state('home.login', {
 
             url: '/login',
-            templateUrl: 'templates/login.html'
+            templateUrl: 'templates/login.html',
+            controller:"signUpController"
         })
 
         .state('home.dhulikhel', {
@@ -60,7 +61,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
         .state('home.form', {
 
             url: '/form',
-            templateUrl: 'templates/form.html',
+            templateUrl: 'templates/newform.html',
             controller:"signUpController"
         })
         .state('home.profile', {
@@ -77,20 +78,24 @@ app.controller('signUpController',['$scope','$http','service','$state',
 function($scope,$http,service,$state){
     $scope.formdata={};
 $scope.getInfo=function(){
-    service.save({userdata:$scope.formdata},"/users/signup",function(err,response){
-        if (!err) {
-            $scope.response = response;
-            console.log(response);
-            $state.go("home.profile");
+    if(password==password1) {
+        service.save({userdata: $scope.formdata}, "/users/signup", function (err, response) {
+            if (!err) {
+                $scope.response = response;
+                console.log(response);
+                $state.go("home.profile");
 
 
-        } else {
-            console.log(response);
-        }
+            } else {
+                console.log(response);
+            }
 
-    })
+        })
 
-
+    }
+    else{
+        console.log("password mismatch");
+    }
     }
 }]
 

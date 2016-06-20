@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container-fluid col-md-12">
+    <div class="form-box">
+        <div class="form-heading">
+            <h1>Sign up</h1>
+        </div>
+        <div class="signup">
+            <div class="signup-form">
+                <label class="name">Name <input type="text" placeholder="What is your name?" ng-model="formdata.name"></label>
+            </div>
+            <div class="signup-form">
+                <label class="age">Age <input type="text" placeholder="How old are you?" ng-model="formdata.age"></label>
+            </div>
+            <div class="signup-form" >
+                <label class="gender" style="color: white;">Gender<select tabindex="7" ng-model="formdata.gender">
+                    <option>MALE</option>
+                    <option>FEMALE</option>
+                </select></label>
+            </div>
+            <div class="signup-form">
+                <label class="address">Address<input type="text" placeholder="Where do you live?" ng-model="formdata.Address"></label>
+            </div>
+            <div class="signup-form">
+                <label class="email">E-mail<input type="text" placeholder="Your Email" ng-model="formdata.emailAddress"></label>
+            </div>
+            <div class="signup-form">
+                <label class="phone">Contact<input type="text" placeholder="your Phone number" ng-model="formdata.number"></label>
+            </div>
+            <div class="signup-form">
+                <label class="password">Password <input type="password" placeholder="password" ng-model="formdata.password"></label>
+            </div>
+            <div class="signup-form">
+                <label class="password">Confirm Password <input type="password" placeholder="Re-enter password" ng-model="formdata.password1"></label>
+            </div>
+            <div>
+                <button class="submitbtn" ng-click="getInfo()">Submit</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

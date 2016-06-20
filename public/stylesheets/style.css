@@ -115,7 +115,6 @@ label > select {
     color: #555;
     margin: 16px 0 6px;
     font-weight: 500;
-    background: transparent;
     border: none;
     outline: none;
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -222,38 +221,8 @@ label > input:focus, label > select:focus {
     background: #124578;
 }
 
-/*form*/
 
-@import url(http://fonts.googleapis.com/css?family=Laila:400,700);
-
-form > div > center {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-weight: bold;
-    font: inherit;
-    vertical-align: baseline;
-    outline: none;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-
-
-form {
-    display: block;
-    margin: 30px;
-    overflow: hidden;
-    background: #fff;
-    border: 1px solid #e4e4e4;
-    border-radius: 5px;
-    font-size: 0;
-}
+/*new form*/
 
 form > div > label {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -282,7 +251,7 @@ label > input {
     display: inline-block;
     position: relative;
     width: 100%;
-    height: 27px;
+    height: 35px;
     line-height: 27px;
     margin: 5px -5px 0;
     padding: 7px 5px 3px;
@@ -304,16 +273,16 @@ label > input {
 label > select {
     display: block;
     width: 100%;
+    height: 35px;
     padding: 0;
     color: #555;
     margin: 16px 0 6px;
     font-weight: 500;
-    background: transparent;
     border: none;
     outline: none;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 14px;
-    opacity: .4;
+    opacity: .6;
     transition: all linear .3s;
 }
 
@@ -332,11 +301,10 @@ label > input:focus, label > select:focus {
 
 
 button {
-    width: 100%;
+    width: 80%;
     height: 35px;
     border: none;
     border-radius: 4px;
-    margin: 0 0 15px 0;
     font-size: 14px;
     color: #fff;
     font-weight: bold;
@@ -349,9 +317,10 @@ button.submitbtn {
     background-image: -moz-linear-gradient(#97c16b, #8ab959);
     background-image: -webkit-linear-gradient(#97c16b, #8ab959);
     background-image: linear-gradient(#97c16b, #8ab959);
-    border-bottom: 1px solid #648c3a;
+
     cursor: pointer;
     color: #fff;
+    margin:0 15px 15px 15px;
 }
 button.submitbtn:hover {
     background-image: -moz-linear-gradient(#8ab959, #7eaf4a);
@@ -361,7 +330,7 @@ button.submitbtn:hover {
 button.submitbtn:active {
     height: 34px;
     border-bottom: 0;
-    margin: 1px 0 0 0;
+    margin:0 15px 15px 15px;
     background-image: -moz-linear-gradient(#7eaf4a, #8ab959);
     background-image: -webkit-linear-gradient(#7eaf4a, #8ab959);
     background-image: linear-gradient(#7eaf4a, #8ab959);
@@ -382,4 +351,70 @@ button.submitbtn:active {
     .col-4 { width: 25% }
 
     .col-submit button { width: 30%; margin: 0 auto; }
+}
+/* wow slider*/
+#wowslider-container1 .ws-title{
+    position:absolute;
+    display:block;
+    bottom: 2em;
+    left: 1em;
+    margin-right: 1em;
+    padding:1em;
+    background:#8dc63f;
+    color:#8dc63f;
+    z-index: 50;
+    font-family:'Exo 2', Arial, Helvetica, sans-serif;
+    line-height: 1em;
+    font-weight: normal;
+    text-shadow: none;
+    box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.7);
+    -moz-box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.7);
+    -webkit-box-shadow: 0px 0px 3px rgba(100, 100, 100, 0.7);
+}
+#wowslider-container1 .ws-title div{
+    margin-top:0.15em;
+    font-size: 0.5em;
+    line-height: 0.5em;
+}
+#wowslider-container1 .ws-title span{
+    font-size: 1em;
+    color:#98a0a8;
+}
+
+
+
+
+
+.form-box{
+    color: white;
+    background-color:#5C1FAC;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+
+}
+.signup{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+}
+.signup-form{
+    height: 86px;
+    width: 400px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.signup-form > label>input{
+    width: 400px;
+}
+
+.form-heading{
+    padding:20px 0 20px 0;
+    text-align: center;
+    background-color: green;
+
+}
+div.form-heading > h1{
+    font-size: 4em;
 }
