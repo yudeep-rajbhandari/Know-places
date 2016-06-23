@@ -11,7 +11,7 @@
 
 </head>
 <style>
-input.ng-invalid{border:1px solid red;}
+
 </style>
 <body>
 <div class="container-fluid col-md-12">
@@ -23,7 +23,7 @@ input.ng-invalid{border:1px solid red;}
         <div class="signup">
             <div class="signup-form">
                 <label class="name">Name <input type="text" placeholder="What is your name?" ng-model="formdata.name" required></label>
-            <span ng-show="form-box.name.$error.required"> Required</span>
+
 
             </div>
             <div class="signup-form">
@@ -39,7 +39,7 @@ input.ng-invalid{border:1px solid red;}
                 <label class="address">Address<input type="text" placeholder="Where do you live?" ng-model="formdata.Address"></label>
             </div>
             <div class="signup-form">
-                <label class="email">E-mail<input type="email" placeholder="Your Email" ng-model="formdata.emailAddress"></label>
+                <label class="email">E-mail<input type="text" placeholder="Your Email" ng-model="formdata.emailAddress"></label>
             </div>
             <div class="signup-form">
                 <label class="phone">Contact<input type="text" placeholder="your Phone number" ng-model="formdata.number"></label>

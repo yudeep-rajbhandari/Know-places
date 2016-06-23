@@ -1,9 +1,10 @@
 {
-  "name": "knowplaces",
-  "version": "0.0.0",
+  "name": "KnowPlaces",
+  "version": "0.0.1",
   "private": true,
+  "main":"app.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "postinstall": "node_modules/bower/bin/bower install"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -13,8 +14,12 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
-    "bower": "~1.7.1",
     "mongoose": "4.0.x",
-    "angularjs-toaster":"0.4.18"
+    "bower": "~1.7.1",
+    "md5":"2.0.0"
+  },
+  "engines": {
+    "node": "0.12.x",
+    "npm": "3.5.2"
   }
 }

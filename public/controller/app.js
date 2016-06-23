@@ -2,7 +2,7 @@
  * Created by linux on 5/17/16.
  */
 
-var app= angular.module('knowplaces', ['ui.router','BackendService']);
+var app= angular.module('knowplaces', ['ui.router','BackendService' ,'toaster', 'service.authorization']);
 
 
 
@@ -74,8 +74,8 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
 }])
 
-app.controller('signUpController',['$scope','$http','service','$state',
-function($scope,$http,service,$state){
+app.controller('signUpController',['$scope', '$http', 'toaster', '$state', 'principal', 'service', '$rootScope',
+    function ($scope, $http, toaster, $state, principal, service, $rootScope) {
     $scope.formdata={};
 $scope.getInfo=function(){
 
@@ -85,7 +85,6 @@ $scope.getInfo=function(){
 
                 console.log(response);
                 $state.go("home.profile");
-
 
             } else {
                 console.log(response);
@@ -97,7 +96,33 @@ $scope.getInfo=function(){
 
 
 
-    
+    $scope.checkForm = function () {
+        service.save({user: $scope.formdata}, "/users/login", function (err, response) {
+
+            if (!err) {
+
+                if (response.data.user) {
+
+                    $state.go('home.profile');
+                }
+                else {
+
+                    toaster.pop('success', "oops", "wrong username or password");
+                }
+
+            } else {
+
+                console.log(response);
+            }
+
+        })
+    }
+    $scope.logout = function () {
+        principal.authenticate('');
+        $state.go('home.homepage');
+    }
+
+
 }]
 
 )

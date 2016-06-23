@@ -14,6 +14,21 @@ var userSchema = new Schema({
     "number" : {"type" : Number},
     "gender":{"type":String}
 });
+userSchema.pre('save', function(next) {
+    var usr=this;
+    usr.password =usr.password;
+    next();
+})
+userSchema.methods.compare=function(password,callback){
+
+    console.log(this.password);
+    console.log((password));
+    callback( this.password==password);
+
+
+
+
+}
 
 
 

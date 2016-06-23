@@ -33,5 +33,26 @@ router.post('/signup', function(req,res,next){
   }
   })
 });
+router.post('/login', function (req, res, next) {
+    model.findOne({emailAddress: req.body.user.emailAddress}, function (err, data) {
+        if (err) throw err;
+        if (!data) {
+            res.json({success: false, message: 'Authentication failed. User not found.'});
+        } else {
+            // check if password matches
+            data.compare(req.body.user.password, function (match) {
+                if (match) {
+                    res.json({success: true, user: data});
+                }
+                else {
+                    res.json({success: false, message: 'Authentication failed. Wrong password.'});
+                }
+            })
+
+        }
+    })
+
+});
+
 
 module.exports = router;
