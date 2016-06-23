@@ -8,29 +8,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        input.ng-invalid.ng-dirty{
+            border:1px solid red;
+            color: #F97C7C;
+        }
+
+    </style>
 
 </head>
 <body>
 <div class="container-fluid col-md-12">
     <div class="form-box">
-        <div class="signup">
-            <div class="signup-form">
-                <label class="name">Email Address <input type="text" placeholder="What is your mailId?" ng-model="formdata.emailAddress"> </label>
-            </div>
-            <div class="signup-form">
-                <label class="password">Password <input type="password" placeholder="password" ng-model="formdata.password"></label>
-            </div>
+        <form name="frm">
+            <div class="signup">
+                <div class="signup-form">
+                    <label class="name">Email Address <input type="email" name="email" placeholder="xyz@example.com" ng-model="formdata.emailAddress" required>
+                    <span ng-show="frm.email.$dirty && frm.email.$error.required"> Required!</span>
+                    <span ng-show="frm.email.$dirty && frm.email.$error.email">Not an email!!</span>
+                    </label>
+                </div>
+                <div class="signup-form">
+                    <label class="password">Password <input type="password" name="password" placeholder="password" ng-model="formdata.password" required ng-maxlength="16" ng-minlength="8">
+                    <span ng-show="frm.password.$dirty && frm.password.$error.required"></span>
+                    <span ng-show="frm.password.$dirty && frm.password.$error.minlength">Too short</span>
+                    <span ng-show="frm.password.$dirty && frm.password.$error.maxlength">Too long</span>
+                    </label>
+                </div>
 
-            <div>
-                <button class="submitbtn" ng-click="checkForm()">Login</button>
+                <div>
+                    <button class="submitbtn "  ng-click="checkForm() " >Login</button>
+                </div>
+                <div>
+                    <button class="submitbtn"><a ui-sref="home.form">Signup</a></button>
+                </div>
             </div>
-            <div>
-                <button class="submitbtn"><a ui-sref="home.form">Signup</a></button>
-            </div>
-
-        </div>
+        </form>
     </div>
 </div>
-
+<script src="http://code.angularjs.org/1.2.3/angular.min.js"></script>
 </body>
 </html>
