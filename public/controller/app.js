@@ -78,10 +78,11 @@ app.controller('signUpController',['$scope','$http','service','$state',
 function($scope,$http,service,$state){
     $scope.formdata={};
 $scope.getInfo=function(){
-    if(password==password1) {
+
         service.save({userdata: $scope.formdata}, "/users/signup", function (err, response) {
             if (!err) {
                 $scope.response = response;
+
                 console.log(response);
                 $state.go("home.profile");
 
@@ -93,10 +94,10 @@ $scope.getInfo=function(){
         })
 
     }
-    else{
-        console.log("password mismatch");
-    }
-    }
+
+
+
+    
 }]
 
 )

@@ -22,8 +22,8 @@
     </div>
     <div class="col-2">
         <label>
-            Company
-            <input placeholder="Where do you currently work?" id="company" name="company" tabindex="2" ng-model="formdata.work">
+            Password
+            <input placeholder="Pick a password" id="company" name="company" tabindex="2" ng-model="formdata.password" input type="password">
         </label>
     </div>
 
@@ -67,14 +67,11 @@
     </div>
     <div class="col-4">
         <label>
-            Yrs Experience
-            <input placeholder="How many years of experience?" id="experience" name="experience" tabindex="7">
+            Address
+            <input placeholder="Where do you live?" id="experience" name="experience" tabindex="7" ng-model="formdata.Address">
         </label>
     </div>
-    <div class="col-4 switch">
-        <label>password</label>
-        <center style="position:relative;margin-bottom:8px;"><input type="password" class="js-switch" ng-model="formdata.password"></center>
-    </div>
+
 
     <div class="col-submit">
         <button class="submitbtn" ng-click="getInfo()">Submit Form</button>

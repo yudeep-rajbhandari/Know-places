@@ -15,4 +15,6 @@ var userSchema = new Schema({
     "gender":{"type":String}
 });
 
+
+
 module.exports=mongoose.model('user',userSchema);
