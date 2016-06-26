@@ -20,8 +20,8 @@
 </style>
 <body>
 <div class="container-fluid col-md-12">
-    <form name="frm">
-        <div class="form-box">
+
+        <div class="form-box" name="frm">
 
             <div class="form-heading">
                 <h1>Sign up</h1>
@@ -66,11 +66,11 @@
                     <label class="password">Confirm Password <input type="password" placeholder="Re-enter password" ng-model="formdata.password1"></label>
                 </div>
                 <div>
-                    <button class="submitbtn" ng-click="getInfo()">Submit</button>
+                    <button class="submitbtn" ng-disabled="" ng-click="getInfo()">Submit</button>
                 </div>
             </div>
         </div>
-    </form>
+
 </div>
 
 

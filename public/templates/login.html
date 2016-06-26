@@ -13,6 +13,9 @@
             border:1px solid red;
             color: #F97C7C;
         }
+       button.submitbtn.ng-invalid{
+           background-image: -webkit-linear-gradient(#A2A3A2, #87FF06);
+       }
 
     </style>
 
@@ -37,10 +40,11 @@
                 </div>
 
                 <div>
-                    <button class="submitbtn "  ng-click="checkForm() " >Login</button>
+
+                    <button class="submitbtn " ng-disabled="frm.$invalid" ng-click="checkForm() " >Login</button>
                 </div>
                 <div>
-                    <button class="submitbtn"><a ui-sref="home.form">Signup</a></button>
+                    <a ui-sref="home.form"><button class="submitbtn">Signup</button></a>
                 </div>
             </div>
         </form>
