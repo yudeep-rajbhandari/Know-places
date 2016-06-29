@@ -23,7 +23,8 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
         .state('home.homepage', {
 
             url: '/homepage',
-            templateUrl: 'templates/homepage.html'
+            templateUrl: 'templates/homepage.html',
+            controller:"placeController"
         })
 
         .state('home.about', {

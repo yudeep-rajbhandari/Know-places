@@ -29,7 +29,7 @@ router.post('/addPlace',function(req,res,next){
 
     });
 
-    router.get('/findPlaces',function(req,res,next){
+    router.get('/findPlace',function(req,res,next){
     model.find({},function(err,data){
             if(err) {
                 thow(err);
