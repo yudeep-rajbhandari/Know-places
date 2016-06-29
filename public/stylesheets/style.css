@@ -1,7 +1,14 @@
 
-
+.container-fluid{
+    font-family: 'Fira Sans', sans-serif;
+}
+.jumbotron{
+    font-family: 'Fira Sans', sans-serif;
+}
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
+    font-family: 'Fira Sans', sans-serif;
+
     margin-bottom: 0;
     border-radius: 0;
 }
@@ -79,7 +86,7 @@ label > input {
     border: none;
     outline: none;
     color: #555;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+
     font-weight: bold;
     font-size: 14px;
     opacity: .6;
@@ -100,7 +107,7 @@ label > select {
     font-weight: 500;
     border: none;
     outline: none;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+
     font-size: 14px;
     opacity: .4;
     transition: all linear .3s;
@@ -123,6 +130,8 @@ label > input:focus, label > select:focus {
 
 
 .body1{
+    font-family: 'Fira Sans', sans-serif;
+
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -135,7 +144,7 @@ label > input:focus, label > select:focus {
 }
 
 .description{
-    font-family: 'Adelle Sans', arial, sans-serif;
+
     padding-top: 50px;
 }
 .menu:first-child{
@@ -208,7 +217,7 @@ label > input {
     border: none;
     outline: none;
     color: #555;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+
     font-weight: bold;
     font-size: 14px;
     opacity: .6;
@@ -230,7 +239,7 @@ label > select {
     font-weight: 500;
     border: none;
     outline: none;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+
     font-size: 14px;
     opacity: .6;
     transition: all linear .3s;
@@ -313,7 +322,7 @@ button.submitbtn:active {
     background:#8dc63f;
     color:#8dc63f;
     z-index: 50;
-    font-family:'Exo 2', Arial, Helvetica, sans-serif;
+
     line-height: 1em;
     font-weight: normal;
     text-shadow: none;
@@ -341,7 +350,7 @@ button.submitbtn:active {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+
 
 }
 .signup{

@@ -8,10 +8,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300' rel='stylesheet' type='text/css'>
     <style>
         input.ng-invalid.ng-dirty{
             border:1px solid red;
             color: #F97C7C;
+        }
+        button.ng-disabled{
+            background-color:#9CBF9C ;
+        }
+        label.span{
+            color: red;
         }
     </style>
 </head>
@@ -21,37 +28,53 @@
 <body>
 <div class="container-fluid col-md-12">
 
-        <div class="form-box" name="frm">
-
+        <div class="form-box" >
+            <div>
+                <form name="frm">
             <div class="form-heading">
                 <h1>Sign up</h1>
             </div>
 
             <div class="signup" >
                 <div class="signup-form">
-                    <label class="name">Name <input type="text" placeholder="What is your name?" ng-model="formdata.name" required></label>
+                    <label class="name">Name <input type="text" name="fname" placeholder="What is your name?" ng-model="formdata.name" required>
+
+
+
+                        <span ng-show="frm.fname.$touched && frm.fname.$invalid">Name is required!!</span>
+                        <span ng-show="frm.fname.$touched && frm.fname.$error.required"></span>
+                    </label>
 
 
                 </div>
                 <div class="signup-form">
-                    <label class="age">Age <input type="text" placeholder="How old are you?" ng-model="formdata.age"></label>
+                    <label class="age">Age <input type="text" name="age" placeholder="How old are you?" ng-model="formdata.age" required>
+                        <span ng-show="frm.age.$touched && frm.age.$error.required"> Required!</span>
+                    </label>
                 </div>
                 <div class="signup-form" >
-                    <label class="gender" style="color: white;">Gender<select tabindex="7" ng-model="formdata.gender">
+                    <label class="gender" name="gender" style="color: white;">Gender<select tabindex="7" ng-model="formdata.gender" required>
                         <option>MALE</option>
                         <option>FEMALE</option>
-                    </select></label>
+                    </select>
+                        <span ng-show="frm.gender.$dirty && frm.gender.$error.required"> mention gender</span>
+                    </label>
                 </div>
                 <div class="signup-form">
-                    <label class="address">Address<input type="text" placeholder="Where do you live?" ng-model="formdata.Address"></label>
+                    <label class="address">Address<input type="text" name="address" placeholder="Where do you live?" ng-model="formdata.Address" required>
+                        <span ng-show="frm.address.$touched && frm.address.$invalid">Address is required!!</span>
+                        <span ng-show="frm.address.$touched && frm.address.$error.required"></span>
+                    </label>
                 </div>
 
                 <div class="signup-form">
-                    <label class="phone">Contact<input type="text" placeholder="your Phone number" ng-model="formdata.number"></label>
+                    <label class="phone">Contact<input type="number" name="number" placeholder="your Phone number" ng-model="formdata.number" required>
+                        <span ng-show="frm.number.$touched && frm.number.$error.required">Required!</span>
+                    </label>
                 </div>
                 <div class="signup-form">
                     <label class="name">Email Address <input type="email" name="email" placeholder="xyz@example.com" ng-model="formdata.emailAddress" required>
-                        <span ng-show="frm.email.$dirty && frm.email.$error.required"> Required!</span>
+                        <span ng-show="frm.email.$touched && frm.email.$error.required"> Required!</span>
                         <span ng-show="frm.email.$dirty && frm.email.$error.email">Not an email!!</span>
                     </label>
                 </div>
@@ -66,9 +89,11 @@
                     <label class="password">Confirm Password <input type="password" placeholder="Re-enter password" ng-model="formdata.password1"></label>
                 </div>
                 <div>
-                    <button class="submitbtn" ng-disabled="" ng-click="getInfo()">Submit</button>
+                    <button class="submitbtn" ng-disabled="frm.$invalid" ng-click="getInfo()">Submit</button>
                 </div>
             </div>
+                </form>
+                </div>
         </div>
 
 </div>

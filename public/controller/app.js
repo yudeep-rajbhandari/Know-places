@@ -70,6 +70,12 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
             templateUrl: 'templates/profile.html',
             controller:"signUpController"
         })
+        .state('home.addplace', {
+
+            url: '/addplace',
+            templateUrl: 'templates/addplace.html',
+            controller:"placeController"
+        })
 
 
 }])
@@ -126,3 +132,39 @@ $scope.getInfo=function(){
 }]
 
 )
+
+app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'principal', 'service', '$rootScope',
+    function ($scope, $http, toaster, $state, principal, service, $rootScope) {
+        $scope.addplace={};
+        $scope.place=[];
+        $scope.addPlace=function(){
+            service.save({addPlaces:$scope.addplace},"/places/addPlace",function(err,response) {
+
+                    if (err) {
+                        throw (err);
+
+                    }
+                if(!err){
+                    toaster.pop("success","added successfully");
+                    $state.go('home.homepage');
+
+                }
+                    else{
+                    console.log(response);
+                }
+                }
+            )
+
+       $scope.findPlaces=function(){
+
+           service.get('/places/findPlace',function(err,response){
+               if(err){
+                   throw (err);
+               }
+           if(!err){
+               $scope.place=response.data.data;
+           }
+           })
+       }
+        }
+    }])

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DHULIKHEL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="container-fluid">
+       <div class="form-vertical">
+           <label >
+                Place Name
+                <input type="text" placeholder="place name" ng-model="addplace.placeName" >
+
+           </label>
+           <label>
+                Description
+                <textarea  placeholder="description" ng-model="addplace.placeDescription">
+
+                </textarea>
+
+            </label>
+            <label>
+                Lattitude
+                <input type="number" ng-model="addplace.latitude">
+
+            </label>
+            <label>
+                Longitude
+                <input type="number" ng-model="addplace.longitude">
+
+            </label>
+            <label>
+                image link
+                <input type="text" ng-model="addplace.imageLink">
+            </label>
+
+            <button ng-click="addPlace()">save</button>
+       </div>
+    </div>
+</body>
+</html>
