@@ -3,7 +3,7 @@
  */
 var mongoose=require('mongoose');
 module.exports=function(app){
-    app.mdb="mongodb://srajbhandari:yudeep66100!@ds063134.mongolab.com:63134/nofood";
+    app.mdb="mongodb://yudeep123:yudeep123@ds023624.mlab.com:23624/knowplaces";
     //app.mdb="mongodb://localhost:27017/takeinfood";
     mongoose.set('debug', true);
 

@@ -40,6 +40,14 @@
                 image link
                 <input type="text" ng-model="addplace.imageLink">
             </label>
+           <label>
+
+               <input type="text" ng-model="addplace.imageLink">
+           </label>
+           <label> district :{{addplace.district}}
+               <select ng-model="addplace.district" ng-options="district for district in districts">
+
+           </select></label>
 
             <button ng-click="addPlace()">save</button>
        </div>

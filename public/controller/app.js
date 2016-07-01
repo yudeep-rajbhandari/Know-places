@@ -78,6 +78,13 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
             controller:"placeController"
         })
 
+        .state('home.places', {
+
+            url: '/places/:district',
+            templateUrl: 'templates/places.html',
+            controller:"showplaceController"
+        })
+
 
 }])
 
@@ -91,6 +98,7 @@ $scope.getInfo=function(){
                 $scope.response = response;
 
                 console.log(response);
+                toaster.pop("success","info",response.data.message)
                 $state.go("home.profile");
 
             } else {
@@ -137,35 +145,62 @@ $scope.getInfo=function(){
 app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'principal', 'service', '$rootScope',
     function ($scope, $http, toaster, $state, principal, service, $rootScope) {
         $scope.addplace={};
-        $scope.place=[];
-        $scope.addPlace=function(){
-            service.save({addPlaces:$scope.addplace},"/places/addPlace",function(err,response) {
+        $scope.places=[];
+        $scope.showplace={};
+        $scope.places=[];
+        $scope.districts=["Achham","Arghakhanchi","Baglung","Baitadi","Bajhang","Bajura","Banke","Bara","Bardiya","Bhaktapur","Bhojpur","Chitwan","Dadeldhura","Dailekh","Dang","Darchula","Dhading","Dhankuta","Dhanusa","Dholkha","Dolpa","Doti","Gorkha","Gulmi","Humla","Ilam","Jajarkot","Jhapa","Jumla","Kailali","Kalikot","Kanchanpur","Kapilvastu","Kaski","Kathmandu","Kavrepalanchok","Khotang","Lalitpur","Lamjung","Mahottari","Makwanpur","Manang","Morang","Mugu","Mustang","Myagdi","Nawalparasi","Nuwakot","Okhaldhunga","Palpa","Panchthar","Parbat","Parsa","Pyuthan","Ramechhap","Rasuwa","Rautahat","Rolpa","Rukum","Rupandehi","Salyan","Sankhuwasabha","Saptari","Sarlahi","Sindhuli","Sindhupalchok","Siraha","Solukhumbu","Sunsari","Surkhet","Syangja","Tanahu","Taplejung","Terhathum","Udayapur"];
+        $scope.addPlace=function() {
+            service.save({addPlaces: $scope.addplace}, "/places/addPlace", function (err, response) {
 
                     if (err) {
                         throw (err);
 
                     }
-                if(!err){
-                    toaster.pop("success","added successfully");
-                    $state.go('home.homepage');
+                    if (!err) {
+                        toaster.pop("success", "added successfully");
+                        $state.go('home.homepage');
 
-                }
-                    else{
-                    console.log(response);
-                }
+                    }
+                    else {
+                        console.log(response);
+                    }
                 }
             )
-
+        }
        $scope.findPlaces=function(){
+           console.log("<<<<");
 
            service.get('/places/findPlace',function(err,response){
                if(err){
                    throw (err);
                }
            if(!err){
-               $scope.place=response.data.data;
+               $scope.places=response.data.data;
            }
            })
        }
-        }
+
     }])
+
+app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 'service','$stateParams',
+    function ($scope, $http, toaster, $state, service, $stateParams) {
+       $scope.places=[];
+        if($stateParams.district){
+        console.log($stateParams.district);
+            service.get('/places/showPlaces/'+$stateParams.district,function(err,response){
+                if(err){
+                    throw(err)
+                }
+                if(!err){
+                    $scope.places=response.data.data;
+                    console.log($scope.places);
+                }
+            })
+        }
+
+
+    }
+    ])
+
+
+

@@ -10,7 +10,8 @@ var placeSchema = new Schema({
     "placeAddress" : {"type" : String },
     "latitude" : {"type" : Number},
     "longitude" : {"type" : Number},
-    "imageLink" : {"type" : String}
+    "imageLink" : {"type" : String},
+    "district":{"type": String}
 });
 
 module.exports=mongoose.model('places',placeSchema);

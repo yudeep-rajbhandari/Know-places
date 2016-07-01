@@ -34,11 +34,25 @@ router.post('/addPlace',function(req,res,next){
             if(err) {
                 thow(err);
             }
-            if(data){
+            if(!err){
                 res.status(200).json({data:data})
     }
         })
     });
+router.get('/showPlaces/:district',function(req,res,next){
+    model.find({district:req.params.district},function(err,data){
+        console.log(req.params.district);
+        if(err){
+            throw (err);
+        }
+    if(!err){
+        res.status(200).json({data:data})
+        console.log(data);
+    }
+    })
+
+
+})
 
 
 
