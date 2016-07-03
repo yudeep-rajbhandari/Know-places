@@ -8,14 +8,14 @@
 {{numbers}}
 {{places.length}}
 
-<div ng-repeat="n in [] | range:places.length">
-    place name:{{places[n].placeName}}
-    place address:{{places[n].placeAddress}}
-    place description:{{places[n].placeDescription}}
-    district :{{places[n].district}}
-    latitude:{{places[n].latitude}}
-    longitude:{{places[n].longitude}}
-    imagelink:{{places[n].imageLink}}
+<div ng-repeat="n in places">
+    place name:{{n.placeName}}
+    place address:{{n.placeAddress}}
+    place description:{{n.placeDescription}}
+    district :{{n.district}}
+    latitude:{{n.latitude}}
+    longitude:{{n.longitude}}
+    imagelink:{{n.imageLink}}
 </div>
 </body>
 </html>

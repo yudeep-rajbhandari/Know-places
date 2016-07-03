@@ -185,7 +185,7 @@ app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'princ
 app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 'service','$stateParams',
     function ($scope, $http, toaster, $state, service, $stateParams) {
        $scope.places=[];
-       $scope.numbers=$scope.places.length;
+
 
 
 
@@ -197,6 +197,7 @@ app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 's
                 }
                 if(!err){
                     $scope.places=response.data.data;
+                    $scope.numbers=$scope.places.length;
                     console.log($scope.places);
                 }
             })
