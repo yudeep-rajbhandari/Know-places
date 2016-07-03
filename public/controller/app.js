@@ -185,6 +185,7 @@ app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'princ
 app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 'service','$stateParams',
     function ($scope, $http, toaster, $state, service, $stateParams) {
        $scope.places=[];
+
         if($stateParams.district){
         console.log($stateParams.district);
             service.get('/places/showPlaces/'+$stateParams.district,function(err,response){
