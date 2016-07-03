@@ -5,15 +5,17 @@
     <title></title>
 </head>
 <body>
+{{numbers}}
 {{places.length}}
-place name:{{places[0].placeName}}
-place address:{{places[0].placeAddress}}
-place description:{{places[0].placeDescription}}
-district :{{places[0].district}}
-latitude:{{places[0].latitude}}
-longitude:{{places[0].longitude}}
-imagelink:{{places[0].imageLink}}
 
-    hello
+<div ng-repeat="n in [] | range:places.length">
+    place name:{{places[n].placeName}}
+    place address:{{places[n].placeAddress}}
+    place description:{{places[n].placeDescription}}
+    district :{{places[n].district}}
+    latitude:{{places[n].latitude}}
+    longitude:{{places[n].longitude}}
+    imagelink:{{places[n].imageLink}}
+</div>
 </body>
 </html>

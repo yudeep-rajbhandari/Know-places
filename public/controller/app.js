@@ -2,7 +2,7 @@
  * Created by linux on 5/17/16.
  */
 
-var app= angular.module('knowplaces', ['ui.router','BackendService' ,'toaster', 'service.authorization']);
+var app= angular.module('knowplaces', ['ui.router','BackendService' ,'toaster', 'service.authorization','App.filters']);
 
 
 
@@ -185,6 +185,9 @@ app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'princ
 app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 'service','$stateParams',
     function ($scope, $http, toaster, $state, service, $stateParams) {
        $scope.places=[];
+       $scope.numbers=$scope.places.length;
+
+
 
         if($stateParams.district){
         console.log($stateParams.district);
