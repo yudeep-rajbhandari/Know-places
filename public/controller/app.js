@@ -24,6 +24,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
             url: '/homepage',
             templateUrl: 'templates/homepage.html',
+
             controller:"placeController"
         })
 

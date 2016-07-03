@@ -377,3 +377,10 @@ button.submitbtn:active {
 div.form-heading > h1{
     font-size: 4em;
 }
+
+
+.dropdown-menu {
+    max-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
