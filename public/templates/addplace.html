@@ -13,47 +13,52 @@
 </head>
 <body>
     <div class="container-fluid">
-       <div class="form-vertical">
-           <label >
-                Place Name
+       <form >
+        <div class="form-vertical">
+            <div class="addplace">
+                <label >
+                Place Name</label>
                 <input type="text" placeholder="place name" ng-model="addplace.placeName" >
-
-           </label>
-           <label>
-                Description
+            </div><br>
+            <div class="addplace">
+                <label>Description</label>
                 <textarea  placeholder="description" ng-model="addplace.placeDescription">
-
                 </textarea>
+            </div><br>
 
-            </label>
-            <label>
-                Lattitude
-                <input type="number" ng-model="addplace.latitude">
+            <div class="addplace">
+                <label >Lattitude</label>
+                <input type="number" step="any" ng-model="addplace.latitude">
+            </div><br>
 
-            </label>
-            <label>
-                Longitude
-                <input type="number" ng-model="addplace.longitude">
-                <label>
-                    Address
-                    <input type="text" ng-model="addplace.placeAddress">
+            <div class="addplace">
+                <label >Longitude</label>
+                <input type="number" step="any" ng-model="addplace.longitude">
+            </div><br>
 
-            </label>
-            <label>
-                image link
+            <div class="addplace">
+                <label >Address</label>
+                <input type="text" ng-model="addplace.placeAddress">
+            </div><br>
+
+            <div class="addplace">
+                <label >image link</label>
                 <input type="text" ng-model="addplace.imageLink">
-            </label>
-           <label>
+            </div><br>
 
-               <input type="text" ng-model="addplace.imageLink">
-           </label>
-           <label> district :{{addplace.district}}
-               <select ng-model="addplace.district" ng-options="district for district in districts">
-
-           </select></label>
+            <div class="addplace">
+                <label >district:</label>
+                <select ng-model="addplace.district" placeholder="district" ng-options="district for district in districts"></select>
+            </div><br>
 
             <button ng-click="addPlace()">save</button>
        </div>
+           </form>
     </div>
+
+
+
+
+
 </body>
 </html>
