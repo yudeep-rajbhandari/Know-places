@@ -192,6 +192,7 @@ app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'princ
 app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 'service','$stateParams',
     function ($scope, $http, toaster, $state, service, $stateParams) {
        $scope.places=[];
+        $scope.delete={};
 
 
 
@@ -211,7 +212,7 @@ app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 's
 
 
         if($stateParams.placeid){
-            console.log($stateParams.placeid);
+
             service.get('/places/showPlaces/'+$stateParams.placeid,function(err,response){
                 if(err){
                     throw(err)
@@ -220,6 +221,22 @@ app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 's
                     $scope.places=response.data.data;
                     $scope.numbers=$scope.places.length;
                     console.log($scope.places);
+                    $scope.deleteItem=$stateParams.placeid;
+                console.log($scope.deleteItem);
+                }
+            })
+        }
+
+        $scope.deleteIt=function(){
+            console.log(">>>>>>")
+            console.log($scope.deleteItem);
+            service.delete({user: $scope.deleteItem}, "/places/deleteItem", function (err, response) {
+                if(err) {
+                    throw(err)
+                }
+                if(!err){
+                    toaster.pop("success","item deleted");
+                    console.log(response);
                 }
             })
         }
