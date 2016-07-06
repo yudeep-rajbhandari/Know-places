@@ -2,7 +2,7 @@
  * Created by linux on 5/17/16.
  */
 
-var app= angular.module('knowplaces', ['ui.router','BackendService' ,'toaster', 'service.authorization','App.filters']);
+var app= angular.module('knowplaces', ['ui.router','BackendService' ,'toaster', 'service.authorization','App.filters','directive.map']);
 
 
 
@@ -82,6 +82,12 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
         .state('home.places', {
 
             url: '/places/:district',
+            templateUrl: 'templates/placesList.html',
+            controller:"showplaceController"
+        })
+        .state('home.showplaces', {
+
+            url: '/showplaces/:placeid',
             templateUrl: 'templates/places.html',
             controller:"showplaceController"
         })
@@ -189,10 +195,24 @@ app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 's
 
 
 
-
         if($stateParams.district){
         console.log($stateParams.district);
-            service.get('/places/showPlaces/'+$stateParams.district,function(err,response){
+            service.get('/places/listPlaces/'+$stateParams.district,function(err,response){
+                if(err){
+                    throw(err)
+                }
+                if(!err){
+                    $scope.places=response.data.data;
+                    $scope.numbers=$scope.places.length;
+                    console.log($scope.places);
+                }
+            })
+        }
+
+
+        if($stateParams.placeid){
+            console.log($stateParams.placeid);
+            service.get('/places/showPlaces/'+$stateParams.placeid,function(err,response){
                 if(err){
                     throw(err)
                 }

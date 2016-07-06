@@ -39,7 +39,7 @@ router.post('/addPlace',function(req,res,next){
     }
         })
     });
-router.get('/showPlaces/:district',function(req,res,next){
+router.get('/listPlaces/:district',function(req,res,next){
     model.find({district:req.params.district},function(err,data){
         console.log(req.params.district);
         if(err){
@@ -52,7 +52,20 @@ router.get('/showPlaces/:district',function(req,res,next){
     })
 
 
-})
+});
+router.get('/showPlaces/:placeid',function(req,res,next){
+    model.find({_id:req.params.placeid},function(err,data){
+        console.log(req.params.placeid);
+        if(err){
+            throw (err)
+        }
+        if(!err) {
+            res.status(200).json({data: data})
+            console.log(data);
+        }
+        })
+    });
+
 
 
 
