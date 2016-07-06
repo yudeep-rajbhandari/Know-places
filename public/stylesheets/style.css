@@ -313,7 +313,7 @@ div.form-heading > h1{
 .dropdown-menu {
     max-height: 100px;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: hidden;}
 
 
 

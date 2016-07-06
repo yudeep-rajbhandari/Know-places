@@ -1,8 +1,12 @@
+<div class="body1" >
+    <div id="map" maps style="width:100%;height:380px;"></div>
 
-<div id="map" maps style="width:500px;height:380px;"></div>
-
-<div ng-repeat="place in places">
-    <li><a ui-sref="home.showplaces({placeid:place._id})">{{place.placeName}}</a></li>
-    <li>{{place.placeAddress}}</li>
-
+    <div ng-repeat="place in places" style="padding-left: auto; background-color: #f1f1f1;">
+        <li style="list-style: none">
+            <div style="line-height: 50px;">
+            <a ui-sref="home.showplaces({placeid:place._id})"><h3>{{place.placeName}}</h3></a>
+            {{place.placeAddress}}
+            </div>
+        </li>
+    </div>
 </div>

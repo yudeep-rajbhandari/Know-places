@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-hello
-<div ng-repeat="place in places">
-    {{place.placeName}}
-    {{place.placeAddress}}
-    {{place.placeDescription}}
-    {{place.latitude}}
 
-
+<div class="body1">
+    <div ng-repeat="place in places">
+        <h1 class="text-center topic">{{place.placeName|uppercase}}</h1>
+        <p>{{place.placeDescription}}</p>
+        {{place.placeAddress}}<br>
+        {{place.latitude}}
+    </div>
+    <button ng-click="deleteIt()">delete</button>
 </div>
-<button ng-click="deleteIt()">delete</button>
-</body>
-</html>
