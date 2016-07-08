@@ -4,8 +4,8 @@
     <div ng-repeat="place in places" style="padding-left: auto; background-color: #f1f1f1;">
         <li style="list-style: none">
             <div style="line-height: 50px;">
-            <a ui-sref="home.showplaces({placeid:place._id})"><h3>{{place.placeName}}</h3></a>
-            {{place.placeAddress}}
+                <a ui-sref="home.showplaces({placeid:place._id})"><h3>{{place.placeName}}</h3></a>
+                {{place.placeAddress}}
             </div>
         </li>
     </div>

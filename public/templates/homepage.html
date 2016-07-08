@@ -18,12 +18,13 @@
 
 <div class="container-fluid text-left">
     <div class="row content">
-        <div class="col-md-2 sidenav text-left" >
-            <p><a href="#">Rafting</a></p>
-            <p><a href="#">hiking</a></p>
-            <p><a href="#">trekking</a></p>
-            <p><a href="#">sight seeing</a></p>
-            <p><a href="#">jungle safari</a></p>
+        <div class="col-md-2 sidenav text-left">
+            <div ng-repeat="category in categories">
+                <p><a ui-sref="home.places1({category:category})">{{category}}</a></p>
+            </div>
+
+
+
         </div>
 
         <div class="col-md-10 text-left body">

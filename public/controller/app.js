@@ -91,6 +91,12 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
             templateUrl: 'templates/places.html',
             controller:"showplaceController"
         })
+        .state('home.places1', {
+
+            url: '/places1/:category',
+            templateUrl: 'templates/listC.html',
+            controller:"showplaceController"
+        })
 
 
 }])
@@ -156,6 +162,7 @@ app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'princ
         $scope.showplace={};
         $scope.places=[];
         $scope.districts=["Achham","Arghakhanchi","Baglung","Baitadi","Bajhang","Bajura","Banke","Bara","Bardiya","Bhaktapur","Bhojpur","Chitwan","Dadeldhura","Dailekh","Dang","Darchula","Dhading","Dhankuta","Dhanusa","Dholkha","Dolpa","Doti","Gorkha","Gulmi","Humla","Ilam","Jajarkot","Jhapa","Jumla","Kailali","Kalikot","Kanchanpur","Kapilvastu","Kaski","Kathmandu","Kavrepalanchok","Khotang","Lalitpur","Lamjung","Mahottari","Makwanpur","Manang","Morang","Mugu","Mustang","Myagdi","Nawalparasi","Nuwakot","Okhaldhunga","Palpa","Panchthar","Parbat","Parsa","Pyuthan","Ramechhap","Rasuwa","Rautahat","Rolpa","Rukum","Rupandehi","Salyan","Sankhuwasabha","Saptari","Sarlahi","Sindhuli","Sindhupalchok","Siraha","Solukhumbu","Sunsari","Surkhet","Syangja","Tanahu","Taplejung","Terhathum","Udayapur"];
+        $scope.categories=["rafting","hiking","sightseeing"]
         $scope.addPlace=function() {
             service.save({addPlaces: $scope.addplace}, "/places/addPlace", function (err, response) {
 
@@ -223,6 +230,22 @@ app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 's
                     console.log($scope.places);
                     $scope.deleteItem=$stateParams.placeid;
                 console.log($scope.deleteItem);
+                }
+            })
+        }
+
+        if($stateParams.category){
+            console.log($stateParams.category);
+            service.get('/places/showPlaces1/'+$stateParams.category,function(err,response){
+                if(err){
+                    throw(err)
+                }
+                if(!err){
+                    $scope.places=response.data.data;
+                    $scope.numbers=$scope.places.length;
+                    console.log($scope.places);
+                    $scope.deleteItem=$stateParams.placeid;
+                    console.log($scope.deleteItem);
                 }
             })
         }

@@ -65,6 +65,20 @@ router.get('/showPlaces/:placeid',function(req,res,next){
         }
         })
     });
+
+router.get('/showPlaces1/:category',function(req,res,next){
+    model.find({categories:req.params.category},function(err,data){
+        console.log(req.params.category);
+        if(err){
+            throw (err)
+        }
+        if(!err) {
+            res.status(200).json({data: data})
+            console.log(data);
+        }
+    })
+});
+
 router.post('/deleteItem',function(req,res,next){
     console.log(req.body.user);
 model.remove({ _id:req.body.user },function(err){

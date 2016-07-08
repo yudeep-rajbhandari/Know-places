@@ -50,6 +50,8 @@
                 <label >district:</label>
                 <select ng-model="addplace.district" placeholder="district" ng-options="district for district in districts"></select>
             </div><br>
+           <label>Place of Interest</label>
+            <select ng-model="addplace.categories" placeholder="category" ng-options="category for category in categories"></select>
 
             <button ng-click="addPlace()">save</button>
        </div>
