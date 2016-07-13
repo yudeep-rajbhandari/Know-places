@@ -8,7 +8,7 @@ var userSchema = new Schema({
     "name":{"type":String},
     "emailAddress" : {"type" : String},
     "password" : {"type" : String },
-    "role":{"type"  : String},
+    "role":{"type"  : String,default:'user'},
     "age" : {"type" : Number},
     "Address" : {"type" : String},
     "number" : {"type" : Number},

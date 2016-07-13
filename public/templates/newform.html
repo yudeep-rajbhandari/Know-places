@@ -86,7 +86,7 @@
                     </label>
                 </div>
                 <div class="signup-form">
-                    <label class="password">Confirm Password <input type="password" placeholder="Re-enter password" ng-model="formdata.password1"></label>
+                    <label class="password">Confirm Password <input type="password" placeholder="Re-enter password" ng-model="formdata.password1" ng-change="check()"></label>
                 </div>
                 <div>
                     <button class="submitbtn" ng-disabled="frm.$invalid" ng-click="getInfo()">Submit</button>

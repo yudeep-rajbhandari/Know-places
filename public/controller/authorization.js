@@ -104,7 +104,7 @@ angular.module('service.authorization', ['ui.router'])
             if ($rootScope.toState.data.roles && $rootScope.toState.data.roles.length > 0 && !principal.isInAnyRole($rootScope.toState.data.roles)) {
               if (isAuthenticated) {
 
-              $state.go('heading.login'); // user is signed in but not authorized for desired state
+              $state.go('home.homepage'); // user is signed in but not authorized for desired state
             }
               else {
                 // user is not authenticated. stow the state they wanted before you
@@ -113,7 +113,7 @@ angular.module('service.authorization', ['ui.router'])
                 $rootScope.returnToStateParams = $rootScope.toStateParams;
 
                 // now, send them to the signin state so they can log in
-                $state.go('heading.login');
+                $state.go('home.homepage');
               }
             }
           });

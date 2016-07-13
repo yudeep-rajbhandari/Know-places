@@ -78,6 +78,19 @@ router.get('/showPlaces1/:category',function(req,res,next){
         }
     })
 });
+router.get('/getDistrict',function(req,res,next){
+    console.log("logggggg")
+    model.distinct('district',function(err,data){
+        if(err){
+            throw(err)
+        }
+        if(!err){
+            res.status(200).json({data:data})
+            console.log('>>>>>>>>>>',data);
+        }
+
+    })
+})
 
 router.post('/deleteItem',function(req,res,next){
     console.log(req.body.user);

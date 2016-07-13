@@ -17,7 +17,10 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
         .state('home', {
             abstract:true,
             url: '/home',
-            templateUrl: 'templates/navbar.html'
+            templateUrl: 'templates/navbar.html',
+            data: {
+                roles: []
+            }
 
         })
         .state('home.homepage', {
@@ -25,29 +28,44 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
             url: '/homepage',
             templateUrl: 'templates/homepage.html',
 
-            controller:"placeController"
+            controller:"placeController",
+            data: {
+                roles: []
+            }
         })
 
         .state('home.about', {
 
         url: '/about',
-        templateUrl: 'templates/about.html'
+        templateUrl: 'templates/about.html',
+            data: {
+                roles: []
+            }
        })
         .state('home.projects', {
 
             url: '/projects',
-            templateUrl: 'templates/projects.html'
+            templateUrl: 'templates/projects.html',
+            data: {
+                roles: []
+            }
         })
         .state('home.contact', {
 
             url: '/contact',
-            templateUrl: 'templates/contact.html'
+            templateUrl: 'templates/contact.html',
+            data: {
+                roles: []
+            }
         })
         .state('home.login', {
 
             url: '/login',
             templateUrl: 'templates/login.html',
-            controller:"signUpController"
+            controller:"signUpController",
+            data: {
+                roles: []
+            }
         })
 
         .state('home.dhulikhel', {
@@ -58,44 +76,65 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
         .state('home.sidebar', {
 
             url: '/sidebar',
-            templateUrl: 'templates/sidebar.html'
+            templateUrl: 'templates/sidebar.html',
+            data: {
+                roles: []
+            }
         })
         .state('home.form', {
 
             url: '/form',
             templateUrl: 'templates/newform.html',
-            controller:"signUpController"
+            controller:"signUpController",
+            data: {
+                roles: []
+            }
         })
         .state('home.profile', {
 
             url: '/profile',
             templateUrl: 'templates/profile.html',
-            controller:"signUpController"
+            controller:"signUpController",
+            data: {
+                roles: []
+            }
         })
         .state('home.addplace', {
 
             url: '/addplace',
             templateUrl: 'templates/addplace.html',
-            controller:"placeController"
+            controller:"placeController",
+            data: {
+                roles: ['user']
+            }
         })
 
         .state('home.places', {
 
             url: '/places/:district',
             templateUrl: 'templates/placesList.html',
-            controller:"showplaceController"
+            controller:"showplaceController",
+            data: {
+                roles: []
+            }
         })
         .state('home.showplaces', {
 
             url: '/showplaces/:placeid',
             templateUrl: 'templates/places.html',
-            controller:"showplaceController"
+            controller:"showplaceController",
+            data: {
+                roles: []
+            }
         })
         .state('home.places1', {
 
             url: '/places1/:category',
             templateUrl: 'templates/listC.html',
-            controller:"showplaceController"
+            controller:"showplaceController",
+            data: {
+                roles: []
+            }
         })
 
 
@@ -122,7 +161,12 @@ $scope.getInfo=function(){
 
     }
 
-
+$scope.check=function(){
+    if($scope.formdata.password!=$scope.formdata.password1){
+        toaster.pop("message","both password not same").
+            $state.go('home.form');
+    }
+}
 
     $scope.checkForm = function () {
         service.save({user: $scope.formdata}, "/users/login", function (err, response) {
@@ -130,8 +174,10 @@ $scope.getInfo=function(){
             if (!err) {
 
                 if (response.data.user) {
+                    principal.authenticate({userid: response.data.user._id, roles: response.data.user.role,
+                        username:response.data.user.name})
 
-                    $state.go('home.profile');
+                    $state.go('home.homepage');
                 }
                 else {
 
@@ -163,6 +209,7 @@ app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'princ
         $scope.places=[];
         $scope.districts=["Achham","Arghakhanchi","Baglung","Baitadi","Bajhang","Bajura","Banke","Bara","Bardiya","Bhaktapur","Bhojpur","Chitwan","Dadeldhura","Dailekh","Dang","Darchula","Dhading","Dhankuta","Dhanusa","Dholkha","Dolpa","Doti","Gorkha","Gulmi","Humla","Ilam","Jajarkot","Jhapa","Jumla","Kailali","Kalikot","Kanchanpur","Kapilvastu","Kaski","Kathmandu","Kavrepalanchok","Khotang","Lalitpur","Lamjung","Mahottari","Makwanpur","Manang","Morang","Mugu","Mustang","Myagdi","Nawalparasi","Nuwakot","Okhaldhunga","Palpa","Panchthar","Parbat","Parsa","Pyuthan","Ramechhap","Rasuwa","Rautahat","Rolpa","Rukum","Rupandehi","Salyan","Sankhuwasabha","Saptari","Sarlahi","Sindhuli","Sindhupalchok","Siraha","Solukhumbu","Sunsari","Surkhet","Syangja","Tanahu","Taplejung","Terhathum","Udayapur"];
         $scope.categories=["rafting","hiking","sightseeing"]
+
         $scope.addPlace=function() {
             service.save({addPlaces: $scope.addplace}, "/places/addPlace", function (err, response) {
 
@@ -193,6 +240,18 @@ app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'princ
            }
            })
        }
+        $scope.getDistrict=function(){
+            console.log("<<<<<<<<<<")
+            service.get('/places/getDistrict',function(err,response){
+                if(err){
+                    throw(err)
+                }
+                if(!err){
+                    $scope.District=response.data.data;
+                    console.log($scope.District);
+                }
+            })
+        }
 
     }])
 
