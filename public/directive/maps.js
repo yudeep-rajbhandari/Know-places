@@ -4,32 +4,50 @@
 angular.module('directive.map', [])
     .directive('maps', function () {
         return {
+
             scope: {
                 'ngModel': "="
             },
             restrict: 'EA',
             link: function (scope, element, attrs) {
-                var map = new google.maps.Map(element[0], {
-                    center: {lat: -34.397, lng: 150.644},
-                    zoom: 8
-                });
+                var pos={};
+                scope.$watch('ngModel',function(newValue,oldValue) {
+                    if (newValue.length > 0) {
 
-                var pos = {
-                    lat: 27.283926,
-                    lng: 84.023438
-                }
+                        console.log(newValue)
+                        var map = new google.maps.Map(element[0], {
+                            center: {lat: -34.397, lng: 150.644},
+                            zoom: 12
+                        })
 
-                var marker = new google.maps.Marker({
-                    position: pos,
-                    map: map
-                });
-                map.setCenter(pos);
 
-                google.maps.event.addListener(marker, 'click', function() {
-                    var infowindow = new google.maps.InfoWindow({map: map});
-                    infowindow.setContent("bbbbbbb");
-                    infowindow.open(map, this);
-                });
+
+
+                        angular.forEach(newValue, function (value) {
+                            console.log(value.latitude);
+                            console.log(value.longitude);
+
+                            var pos = {
+                                lat: value.latitude,
+                                lng: value.longitude
+
+                            }
+
+
+                            var marker = new google.maps.Marker({
+                                position: pos,
+                                map: map
+                            });
+                            map.setCenter(pos);
+
+                            google.maps.event.addListener(marker, 'click', function() {
+                                var infowindow = new google.maps.InfoWindow({map: map});
+                                infowindow.setContent(value.placeName);
+                                infowindow.open(map, this);
+                            });
+                        })
+                    }
+                })
 
             }
         }

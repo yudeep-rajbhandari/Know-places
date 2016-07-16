@@ -2,7 +2,7 @@
  * Created by linux on 5/17/16.
  */
 
-var app= angular.module('knowplaces', ['ui.router','BackendService' ,'toaster', 'service.authorization','App.filters','directive.map']);
+var app= angular.module('knowplaces', ['ui.router','BackendService' ,'toaster', 'service.authorization','App.filters','directive.map','ngMap']);
 
 
 
@@ -164,7 +164,7 @@ $scope.getInfo=function(){
 $scope.check=function(){
     if($scope.formdata.password!=$scope.formdata.password1){
         toaster.pop("message","both password not same").
-            $state.go('home.form');
+            $scope.button=true;
     }
 }
 
@@ -176,6 +176,8 @@ $scope.check=function(){
                 if (response.data.user) {
                     principal.authenticate({userid: response.data.user._id, roles: response.data.user.role,
                         username:response.data.user.name})
+$scope.username=response.data.user.name;
+                    console.log($scope.username);
 
                     $state.go('home.homepage');
                 }
@@ -202,7 +204,7 @@ $scope.check=function(){
 )
 
 app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'principal', 'service', '$rootScope',
-    function ($scope, $http, toaster, $state, principal, service, $rootScope) {
+    function ($scope, $http, toaster, $state, principal, service, $rootScope,directive) {
         $scope.addplace={};
         $scope.places=[];
         $scope.showplace={};
@@ -255,10 +257,12 @@ app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'princ
 
     }])
 
-app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 'service','$stateParams',
-    function ($scope, $http, toaster, $state, service, $stateParams) {
+app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 'service','$stateParams','NgMap',
+    function ($scope, $http, toaster, $state, service, $stateParams,NgMap) {
        $scope.places=[];
         $scope.delete={};
+
+
 
 
 
@@ -271,7 +275,7 @@ app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 's
                 if(!err){
                     $scope.places=response.data.data;
                     $scope.numbers=$scope.places.length;
-                    console.log($scope.places);
+
                 }
             })
         }
@@ -286,9 +290,9 @@ app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 's
                 if(!err){
                     $scope.places=response.data.data;
                     $scope.numbers=$scope.places.length;
-                    console.log($scope.places);
+
                     $scope.deleteItem=$stateParams.placeid;
-                console.log($scope.deleteItem);
+
                 }
             })
         }
@@ -304,10 +308,13 @@ app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 's
                     $scope.numbers=$scope.places.length;
                     console.log($scope.places);
                     $scope.deleteItem=$stateParams.placeid;
-                    console.log($scope.deleteItem);
+
                 }
             })
         }
+
+
+
 
         $scope.deleteIt=function(){
             console.log(">>>>>>")
