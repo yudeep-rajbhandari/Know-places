@@ -2,361 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffc8f378-ae9a-42a2-be09-d087edc3894a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-Bold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-Bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-BoldItalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-BoldItalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-Italic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-Italic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-Light-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-Light-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-LightItalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-LightItalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-Regular-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-Regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/images/beachflag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/images/spinner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/.nvmrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/static/scripts/prettify/Apache-License-2.0.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/Attr2MapOptions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/Attr2MapOptions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/CONTRIBUTORS.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/GeoCoder.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/GeoCoder.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/NavigatorGeolocation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/NavigatorGeolocation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/NgMap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/NgMap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/NgMapPool.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/NgMapPool.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-Bold-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-BoldItalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-Italic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-Light-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-LightItalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fonts/OpenSans-Regular-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/StreetView.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/StreetView.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/TODO" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/USGSOverlay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/aerial-rotate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/aerial-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/all-examples.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/all-examples.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/lib/angular-mocks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/lib/angular-ui-router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/plugins/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/lib/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/lib/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/js/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/lib/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/services/attr2-map-options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/services/attr2_options_spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/bicycling-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/bicycling-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/bicycling-layer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/lib/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/filters/camel-case.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/circle-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/container.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/contributors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/control-custom-state.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/control-custom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/control-disableUI.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/control-options.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/control-positioning.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/control-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/custom-control.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/custom-control.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/custom-control.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/custom-control.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/custom-marker-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/custom-marker-clusterer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/custom-marker-custom-style.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/custom-marker-ng-repeat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/custom-marker-two-way-binding.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/custom-marker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/custom-marker.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/custom-marker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/details.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/directions-with-current-location.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/directions-with-custom-marker.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/directions-with-ng-repeat-panels.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/directions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/directions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/directions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/directions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/directions2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/drawing-manager.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/drawing-manager.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/drawing-manager.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/drawing-manager.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/dynamic-maps-engine-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/dynamic-maps-engine-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/dynamic-maps-engine-layer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/event-arguments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/event-domlistener.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/event-properties.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/event-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/events.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/example.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/examples.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/exceptions.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/fusion-tables-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/fusion-tables-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/fusion-tables-layer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/services/geo-coder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/services/geo_coder_spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/geojson.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/scripts/get-starbucks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/groundoverlay-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/heatmap-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/heatmap-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/heatmap-layer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/heatmap.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/icon-complex.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/icon-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/info-window.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/info-window.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/info-window.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/infowindow-simple-max.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/infowindow-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/infowindow_compile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/infowindow_geolookup.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/infowindow_ng_click.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/css/jsdoc-default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/static/styles/jsdoc-default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/filters/jsonize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/karma.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/kml-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/kml-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/kml-layer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/static/scripts/prettify/lang-css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-bicycling.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-data-dynamic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-data-quakes-advanced.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-data-quakes-default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-data-quakes-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-data-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-data-style.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-dynamicmapsengine.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-fusiontables-heatmap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-fusiontables-query.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-fusiontables-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-fusiontables-styling.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-georss.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-heatmap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-kml-features.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-kml.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-mapsengine.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-style-event.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-traffic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/layer-transit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/layout.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/static/scripts/linenumber.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/mainpage.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/controllers/map-controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map-coordinates.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/map-data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/map-data.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/map-data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map-geolocation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map-gulp-usemin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map-gulp-usemin/map-gulp-usemin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map-initialized-callback.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map-initialized.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map-lazy-inint.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map-lazy-load-params.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/map-lazy-load.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/map-lazy-load.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/map-lazy-load.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map-projection-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/map-type.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/map-type.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/map-type.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map-with-dynamic-id.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map_app.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map_control.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/directives/map_controller_spec_back.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map_events.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map_fit_bounds.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map_geo_fallback_center.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map_no_default_style.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map_options.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/directives/map_spec_bak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map_with_address.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map_with_current_position.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map_with_dynamic_address.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map_with_dynamic_center.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map_zoom_to_include_markers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/maps-engine-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/maps-engine-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/maps-engine-layer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/mapsenginelayer-noauth-layerid.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/mapsenginelayer-noauth-layerkey.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/maptype-base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/maptype-image-overlay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/maptype-image.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/maptype-overlay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/maptype-styled-complex.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/maptype-styled-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker-animations-iteration.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker-animations.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker-clusterer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker-remove.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker-symbol-custom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker-symbol-predefined.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker-with-default-options.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/marker.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/marker.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/marker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker_data_with_ng_repeat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker_dynamic_ng_repeat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker_icon.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker_on_street_view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/directives/marker_spec_bak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker_with_address.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker_with_current_position.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker_with_dynamic_address.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker_with_ng_repeat_dynamic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker_with_ng_repeat_no_watcher.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/marker_with_parent_controller.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/lib/markerclusterer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/scripts/markerclusterer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/scripts/markerclusterer_packed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/scripts/markers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/members.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/method.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/multiple_maps_on_a_page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/map-gulp-usemin/myapp.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/services/navigator-geolocation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/services/navigator_geolocation_spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/services/ng-map-pool-spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/services/ng-map-pool.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/scripts/ng-map.debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/scripts/ng-map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/services/ng-map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/scripts/ng-map.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/ngMap.ng-map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/ngMap.ng-map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/ngmap.custom-marker.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/ngmap.custom-marker.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/overlay-custom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/overlay-hideshow.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/overlay-map-type.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/overlay-map-type.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/overlay-map-type.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/overlay-remove.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/overlay-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/overlay-symbol-animate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/overlay-symbol-arrow.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/overlay-symbol-custom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/overlay-symbol-dashed.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/params.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/places-auto-complete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/places-auto-complete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/places-auto-complete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/places-auto-complete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/polygon-arrays.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/polygon-autoclose.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/polygon-draggable.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/polygon-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/polyline-complex.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/polyline-remove.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/polyline-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/static/styles/prettify-jsdoc.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/lib/prettify-tomorrow-night.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/css/prettify-tomorrow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/static/styles/prettify-tomorrow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/lib/prettify-tomorrow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/css/prettify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/js/prettify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/static/scripts/prettify/prettify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/lib/prettify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/properties.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/protractor.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/publish.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/scripts/quakes.geo.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/rectangle-event.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/rectangle-simple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/rectangle-zoom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/returns.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/road-trip.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/script-tags-for-development.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/shape.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/shape.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/shape.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/shape.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/shape_circle_with_current_position.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/shape_circle_with_dynamic_address.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/directives/shape_spec_bak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/shape_with_ng_repeat.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/source.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/scripts/starbucks.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/street-view-panorama.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/street-view-panorama.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/street-view-panorama_container.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/street-view-panorama_container2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/services/street-view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/street-view_road_trip.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/directives/street_view_panorama_spec_bak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/services/street_view_spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/streetview-panorama.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/streetview-panorama.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/taxi-data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/spec/e2e/testapp_spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/traffic-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/traffic-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/traffic-layer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/transit-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/build/docs/source/transit-layer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/directives/transit-layer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/tutorial.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/config/jsdoc/template/tmpl/type.tmpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/ui-bootstrap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/ui-router.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/ui-router2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/us-states-20m.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/ngmap/testapp/user-editable-shapes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-static/HISTORY.md" afterPath="$PROJECT_DIR$/node_modules/serve-static/HISTORY.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-static/LICENSE" afterPath="$PROJECT_DIR$/node_modules/serve-static/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/kerberos/build/Makefile" afterPath="$PROJECT_DIR$/node_modules/kerberos/build/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-static/README.md" afterPath="$PROJECT_DIR$/node_modules/serve-static/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/directive/mapsDirection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/newpage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/templates/requestPost.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/templates/seeRequest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/about.html" afterPath="$PROJECT_DIR$/public/templates/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/addplace.html" afterPath="$PROJECT_DIR$/public/templates/addplace.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controller/app.js" afterPath="$PROJECT_DIR$/public/controller/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controller/authorization.js" afterPath="$PROJECT_DIR$/public/controller/authorization.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/bson-ext/build/config.gypi" afterPath="$PROJECT_DIR$/node_modules/bson-ext/build/config.gypi" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/kerberos/build/config.gypi" afterPath="$PROJECT_DIR$/node_modules/kerberos/build/config.gypi" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/dhulikhel.html" afterPath="$PROJECT_DIR$/public/templates/dhulikhel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/homepage.html" afterPath="$PROJECT_DIR$/public/templates/homepage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-static/index.js" afterPath="$PROJECT_DIR$/node_modules/serve-static/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/kerberos/build/kerberos.target.mk" afterPath="$PROJECT_DIR$/node_modules/kerberos/build/kerberos.target.mk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/listC.html" afterPath="$PROJECT_DIR$/public/templates/listC.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/directive/maps.js" afterPath="$PROJECT_DIR$/public/directive/maps.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/navbar.html" afterPath="$PROJECT_DIR$/public/templates/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/newform.html" afterPath="$PROJECT_DIR$/public/templates/newform.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-static/package.json" afterPath="$PROJECT_DIR$/node_modules/serve-static/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/placesList.html" afterPath="$PROJECT_DIR$/public/templates/placesList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/templates/places.html" afterPath="$PROJECT_DIR$/public/templates/places.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/places.js" afterPath="$PROJECT_DIR$/models/places.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/places.js" afterPath="$PROJECT_DIR$/routes/places.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="knowplaces.iws" />
@@ -378,55 +42,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/controller/app.js">
+      <file leaf-file-name="places.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/places.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="292" column="0" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#39#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="maps.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/directive/maps.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.58947366">
+              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listC.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/templates/listC.html">
+      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/templates/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.054151624">
-              <caret line="1" column="80" selection-start-line="1" selection-start-column="80" selection-end-line="1" selection-end-column="80" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="places.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/templates/places.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375">
-              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+            <state vertical-scroll-proportion="-10.041667">
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/user.js">
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/users.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+              <caret line="2" column="43" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -436,54 +76,70 @@
         <entry file="file://$PROJECT_DIR$/models/places.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="13" />
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/templates/profile.html">
+      <file leaf-file-name="places.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/templates/places.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="placesList.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/templates/placesList.html">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/controller/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.25">
-              <caret line="2" column="80" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="80" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="450" column="0" selection-start-line="450" selection-start-column="0" selection-end-line="450" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homepage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/templates/homepage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requestPost.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/templates/requestPost.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.25">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listC.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/templates/listC.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="64" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeRequest.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/templates/seeRequest.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newform.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/templates/newform.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375">
-              <caret line="91" column="60" selection-start-line="91" selection-start-column="60" selection-end-line="91" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dhulikhel.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/templates/dhulikhel.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.8333333">
-              <caret line="176" column="61" selection-start-line="176" selection-start-column="52" selection-end-line="176" selection-end-column="61" />
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -494,6 +150,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Html5" />
       </list>
@@ -508,7 +165,6 @@
         <option value="$PROJECT_DIR$/.bowerrc.json" />
         <option value="$PROJECT_DIR$/public/templates/app.html" />
         <option value="$PROJECT_DIR$/public/templates/contact.html" />
-        <option value="$PROJECT_DIR$/public/templates/about.html" />
         <option value="$PROJECT_DIR$/public/templates/projects.html" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/controller/backEndService.js" />
@@ -517,31 +173,37 @@
         <option value="$PROJECT_DIR$/public/templates/login1.html" />
         <option value="$PROJECT_DIR$/public/templates/singup.html" />
         <option value="$PROJECT_DIR$/public/templates/form.html" />
-        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/public/javascripts/index.js" />
         <option value="$PROJECT_DIR$/public/templates/signup2.html" />
-        <option value="$PROJECT_DIR$/routes/users.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/public/templates/login.html" />
         <option value="$PROJECT_DIR$/config/mongoFile.js" />
         <option value="$PROJECT_DIR$/public/controller/filter1.js" />
         <option value="$PROJECT_DIR$/public/controller/filter.js" />
-        <option value="$PROJECT_DIR$/public/templates/places.html" />
-        <option value="$PROJECT_DIR$/models/places.js" />
-        <option value="$PROJECT_DIR$/public/templates/addplace.html" />
-        <option value="$PROJECT_DIR$/public/templates/homepage.html" />
-        <option value="$PROJECT_DIR$/routes/places.js" />
-        <option value="$PROJECT_DIR$/public/controller/authorization.js" />
         <option value="$PROJECT_DIR$/models/user.js" />
         <option value="$PROJECT_DIR$/public/templates/newform.html" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/templates/navbar.html" />
         <option value="$PROJECT_DIR$/public/templates/dhulikhel.html" />
-        <option value="$PROJECT_DIR$/public/controller/app.js" />
-        <option value="$PROJECT_DIR$/public/templates/placesList.html" />
-        <option value="$PROJECT_DIR$/public/directive/maps.js" />
         <option value="$PROJECT_DIR$/public/templates/listC.html" />
+        <option value="$PROJECT_DIR$/public/stylesheets/newpage.css" />
+        <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/public/controller/authorization.js" />
+        <option value="$PROJECT_DIR$/public/templates/places.html" />
+        <option value="$PROJECT_DIR$/public/templates/homepage.html" />
+        <option value="$PROJECT_DIR$/public/templates/addplace.html" />
+        <option value="$PROJECT_DIR$/public/templates/placesList.html" />
+        <option value="$PROJECT_DIR$/public/directive/maps direction.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/templates/about.html" />
+        <option value="$PROJECT_DIR$/public/directive/maps.js" />
+        <option value="$PROJECT_DIR$/public/directive/mapsDirection.js" />
+        <option value="$PROJECT_DIR$/routes/users.js" />
+        <option value="$PROJECT_DIR$/models/places.js" />
+        <option value="$PROJECT_DIR$/public/templates/navbar.html" />
+        <option value="$PROJECT_DIR$/public/templates/requestPost.html" />
+        <option value="$PROJECT_DIR$/public/templates/seeRequest.html" />
+        <option value="$PROJECT_DIR$/public/controller/app.js" />
+        <option value="$PROJECT_DIR$/routes/places.js" />
       </list>
     </option>
   </component>
@@ -554,9 +216,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="51" />
-    <option name="y" value="52" />
+    <option name="y" value="24" />
     <option name="width" value="1315" />
-    <option name="height" value="716" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -581,7 +243,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -660,24 +321,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="knowplaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Know-places" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="directive" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -697,24 +340,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="knowplaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Know-places" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -748,6 +373,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -758,6 +384,7 @@
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="recentsLimit" value="5" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -949,23 +576,29 @@
       <option name="project" value="LOCAL" />
       <updated>1468407810197</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="maps final">
+      <created>1468683742993</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1468683742993</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="52" width="1315" height="716" extended-state="6" />
+    <frame x="51" y="24" width="1315" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24380805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21749227" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44182125" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18679549" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12710567" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -999,7 +632,8 @@
     <MESSAGE value="delete" />
     <MESSAGE value="sidebar" />
     <MESSAGE value="passwoord" />
-    <option name="LAST_COMMIT_MESSAGE" value="passwoord" />
+    <MESSAGE value="maps final" />
+    <option name="LAST_COMMIT_MESSAGE" value="maps final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1014,46 +648,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/new2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/new3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/books.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/controller/profileController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1102,24 +700,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/login1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.791666">
-          <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.285715">
           <caret line="81" column="1" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1144,13 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/nan/tools/1to2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1165,38 +742,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/controller/filter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/mongoFile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/controller/BackendService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/addplace.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1207,61 +756,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/controller/authorization.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="125" column="6" selection-start-line="125" selection-start-column="6" selection-end-line="125" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="51" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/templates/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="125" selection-start-line="70" selection-start-column="125" selection-end-line="70" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="267" column="1" selection-start-line="267" selection-start-column="1" selection-end-line="267" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/places.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1279,27 +777,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/homepage.html">
+    <entry file="file://$PROJECT_DIR$/public/templates/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="104" column="22" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="22" />
-          <folding />
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/navbar.html">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/newpage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/newform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="60" selection-start-line="91" selection-start-column="60" selection-end-line="91" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/dhulikhel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="176" column="61" selection-start-line="176" selection-start-column="52" selection-end-line="176" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mongoFile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="32" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/controller/authorization.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/controller/filter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/login1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.125">
+          <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1311,10 +890,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/addplace.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.583333">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/placesList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/directive/maps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/directive/mapsDirection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/places.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/listC.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="64" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/seeRequest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.041667">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/places.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="13" />
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/requestPost.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1322,75 +1010,16 @@
     <entry file="file://$PROJECT_DIR$/public/controller/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="292" column="0" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <caret line="450" column="0" selection-start-line="450" selection-start-column="0" selection-end-line="450" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/dhulikhel.html">
+    <entry file="file://$PROJECT_DIR$/routes/places.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8333333">
-          <caret line="176" column="61" selection-start-line="176" selection-start-column="52" selection-end-line="176" selection-end-column="61" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/places.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.58947366">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/newform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375">
-          <caret line="91" column="60" selection-start-line="91" selection-start-column="60" selection-end-line="91" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/directive/maps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/placesList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="2" column="80" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="80" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/templates/listC.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.054151624">
-          <caret line="1" column="80" selection-start-line="1" selection-start-column="80" selection-end-line="1" selection-end-column="80" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

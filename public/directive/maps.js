@@ -34,6 +34,7 @@ angular.module('directive.map', [])
                             }
 
 
+
                             var marker = new google.maps.Marker({
                                 position: pos,
                                 map: map

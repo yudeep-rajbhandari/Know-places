@@ -1,0 +1,12 @@
+
+<div class="body1">
+    <div ng-repeat="request in seeRequest">
+        <h1 class="text-center topic">{{request.placeName|uppercase}}</h1>
+        <p>{{request.placeDescription}}</p>
+        {{request.placeAddress}}<br>
+        {{request.latitude}}
+        <img ng-src="{{request.imageLink}}">
+    </div>
+    <button ng-click="deleteIt()">delete</button>
+    <button ng-click="postIt()">post</button>
+</div>

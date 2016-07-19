@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <div ng-repeat="request in seeRequest" style="padding-left: auto; background-color: #f1f1f1;">
+        <li style="list-style: none">
+            <div style="line-height: 50px;">
+                {{place}}
+                <a ui-sref="home.requestPost({placeid:request._id})"><h3>{{request.placeName}}</h3></a>
+                {{request.placeAddress}}
+            </div>
+        </li>
+    </div>
+
+
+
+</div>
+</body>
+</html>

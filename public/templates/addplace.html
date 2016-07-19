@@ -12,12 +12,12 @@
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="container-fluid">
-       <form >
+<div class="container-fluid">
+    <form >
         <div class="form-vertical">
             <div class="addplace">
                 <label >
-                Place Name</label>
+                    Place Name</label>
                 <input type="text" placeholder="place name" ng-model="addplace.placeName" >
             </div><br>
             <div class="addplace">
@@ -50,13 +50,15 @@
                 <label >district:</label>
                 <select ng-model="addplace.district" placeholder="district" ng-options="district for district in districts"></select>
             </div><br>
-           <label>Place of Interest</label>
+
+            <label>Place of Interest</label>
             <select ng-model="addplace.categories" placeholder="category" ng-options="category for category in categories"></select>
 
-            <button ng-click="addPlace()">save</button>
-       </div>
-           </form>
-    </div>
+            <button ng-click="addPlace()" >save</button>
+
+        </div>
+    </form>
+</div>
 
 
 

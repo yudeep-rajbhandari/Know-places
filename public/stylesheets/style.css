@@ -53,13 +53,13 @@ footer {
 .footer{
     margin-bottom:0px;
 }
-
 .background{
     background-color: #51CA45;
     height: 100vh;
     margin-top: 0px;
 
 }
+
 
 
 
@@ -337,77 +337,7 @@ div.form-heading > h1{
 
 /*new page*/
 
-.intro{
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 150px;
-
-    vertical-align: middle;
-    white-space: normal;
 
 
-}
-
-
-#intro{
-    display: block;
-    text-align: center;
-    margin-top: 0px;
-    padding-top: 100px;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    font-family: Arial;
-    text-decoration:none; ;
-    font-size: 72px;
-    line-height: 72px;
-    font-family: 'Adelle Sans', arial, sans-serif;
-    font-weight: bold;
-
-
-}
-
-.intro > h3{
-    display: block;
-    text-align: center;
-    margin-top: 0px;
-    padding-bottom:1em;
-
-    text-align:center;
-    color: white;
-    font-family: 'Adelle Sans', arial, sans-serif;
-}
-
-#start{
-    display: block;
-    text-align: center;
-    width: 150px;
-    margin: 0px auto;
-    padding: 20px;
-    color: white;
-    background-color: #1B62E5;
-    text-transform: uppercase;
-    font-family: Arial;
-    border: 1px solid #fff;
-    text-decoration: none;
-    border-radius: 10px;
-}
-a#start:hover{
-    background-color: #477EE6;
-}
-
-.background{
-    background-color: #1B62E5;
-    height: 100%;
-    height: 100vh;
-    width:100%;
-    width: 100vw;
-    position: relative;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-}
 
 

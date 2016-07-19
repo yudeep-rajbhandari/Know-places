@@ -36,13 +36,18 @@ angular.module('service.authorization', ['ui.router'])
         return false;
       },
       authenticate: function(identity) {
+
         _identity = identity;
+
         _authenticated = identity != null;
         // for this demo, we'll store the identity in localStorage. For you, it could be a cookie, sessionStorage, whatever
         if (identity) {
           localStorage.setItem("demo.identity", angular.toJson(identity));
         }
-        else localStorage.removeItem("demo.identity");
+        else {localStorage.removeItem("demo.identity");
+          console.log('12344')
+        }
+
       },
       getRole:function(){
         return angular.fromJson(localStorage.getItem("demo.identity"));
