@@ -1,4 +1,6 @@
-
+#background{
+    margin-top: -20px;
+}
 .container-fluid{
     font-family: 'Fira Sans', sans-serif;
 }
@@ -25,11 +27,6 @@
 }
 
 /* Set black background color, white text and some padding */
-footer {
-    background-color: #555;
-    color: white;
-    padding: 15px;
-}
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
@@ -50,15 +47,7 @@ footer {
 }
 
 
-.footer{
-    margin-bottom:0px;
-}
-.background{
-    background-color: #51CA45;
-    height: 100vh;
-    margin-top: 0px;
 
-}
 
 
 
@@ -83,7 +72,21 @@ footer {
     margin-right: auto;
     font-size: 16px;
 }
+div.places{
+    background-image: url("/images/sky.jpg");
+    background-attachment: fixed;
+    color: #080808;
+    height: 100%;
+    min-height: 100vh;
+    width:100%;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
 
+}
 .topic{
     padding-top: 50px;
     font-size: 4em;
@@ -149,97 +152,6 @@ footer {
 }
 
 
-/*new form*/
-
-label > input {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 35px;
-    line-height: 27px;
-    margin: 5px -5px 0;
-    padding: 7px 5px 3px;
-    border:none ;
-
-    color: #555;
-
-    font-weight: bold;
-    font-size: 14px;
-    opacity: .6;
-    transition: all linear .3s;
-}
-
-.col-submit {
-    text-align: center;
-    padding: 20px;
-}
-
-label > select {
-    display: block;
-    width: 100%;
-    height: 35px;
-    padding: 0;
-
-    margin: 16px 0 6px;
-    font-weight: 500;
-    border: none;
-    outline: none;
-
-    font-size: 14px;
-    opacity: .6;
-    transition: all linear .3s;
-}
-
-input, textarea {
-    -webkit-font-smoothing: antialiased;
-    outline: none;
-}
-
-label > input:focus, label > select:focus {
-    opacity: 1;
-}
-
-
-
-button {
-    width: 80%;
-    height: 35px;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    color: #fff;
-    font-weight: bold;
-    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
-    overflow: hidden;
-    outline: none;
-}
-
-button.submitbtn {
-    background-image: -moz-linear-gradient(#97c16b, #8ab959);
-    background-image: -webkit-linear-gradient(#97c16b, #8ab959);
-    background-image: linear-gradient(#97c16b, #8ab959);
-
-    cursor: pointer;
-    color: #fff;
-    margin:0 15px 15px 15px;
-}
-button.submitbtn:hover {
-    background-image: -moz-linear-gradient(#8ab959, #7eaf4a);
-    background-image: -webkit-linear-gradient(#8ab959, #7eaf4a);
-    background-image: linear-gradient(#8ab959, #7eaf4a);
-}
-button.submitbtn:active {
-    height: 34px;
-    border-bottom: 0;
-    margin:0 15px 15px 15px;
-    background-image: -moz-linear-gradient(#7eaf4a, #8ab959);
-    background-image: -webkit-linear-gradient(#7eaf4a, #8ab959);
-    background-image: linear-gradient(#7eaf4a, #8ab959);
-    -moz-box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, 0.3);
-}
-
 
 
 /* wow slider*/
@@ -275,40 +187,6 @@ button.submitbtn:active {
 
 
 
-.form-box{
-    color: white;
-    background-color:#5C1FAC;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-
-
-}
-.signup{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-left: 5%;
-}
-.signup-form{
-    height: 86px;
-    width: 400px;
-    margin-right: 5%;
-    margin-left: 5%;
-}
-.signup-form > label>input{
-    width: 400px;
-}
-
-.form-heading{
-    padding:20px 0 20px 0;
-    text-align: center;
-    background-color: green;
-
-}
-div.form-heading > h1{
-    font-size: 4em;
-}
-
 
 .dropdown-menu {
     max-height: 100px;
@@ -337,7 +215,303 @@ div.form-heading > h1{
 
 /*new page*/
 
+.background{
+    /*background-color: #1B62E5;*/
+    background-image: url("/images/img-3295.jpg") ;
+    background-attachment: scroll;
+    height: 100%;
+    height: 100vh;
+    width:100%;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
+
+}
+
+.intro{
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 150px;
+
+    vertical-align: middle;
+    white-space: normal;
+
+
+}
+
+
+#intro{
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial;
+    text-decoration:none; ;
+    font-size: 72px;
+    line-height: 72px;
+    font-family: 'Adelle Sans', arial, sans-serif;
+    font-weight: bold;
+
+
+}
+
+.intro > h3{
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom:1em;
+
+    text-align:center;
+    color: white;
+    font-family: 'Adelle Sans', arial, sans-serif;
+}
+
+#start{
+    display: block;
+    text-align: center;
+    width: 150px;
+    margin: 0px auto;
+    padding: 20px;
+    color: white;
+
+    text-transform: uppercase;
+    font-family: Arial;
+    border: 1px solid #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    opacity: 1;
+}
+a#start:hover{
+    opacity: 1;
+    border: 2px solid #fff;
+    text-decoration-style: bold;
+    /*background-color: #477EE6;*/
+}
+
+.new{
+    margin: 50px 100px 50px;
+}
+.col-md-4{
+
+}
+
+
+.imgList > li {
+    display: inline;
+    float: left;
+    margin: 0 10px 20px;
+    width: 300px;
+}
+
+.imgList > li > a > img {
+    border: 2px solid #1a1a1a;
+    display: block;
+    opacity: .8;
+    transition: 0.5s ease-in-out;
+}
+.imgList > li > a > img:hover {
+    opacity: 1;
+}
+span{
+    float: center;
+}
+
+.imgList{
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration-style: none;
+    margin-top: 100px;
+    padding-top: 24px;
+
+}
+
+.list > li {
+    display: inline;
+    float: left;
+    margin: 0 10px 20px;
+    width: 300px;
+}
 
 
 
+.list{
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration-style: none;
 
+
+}
+
+.body-content{
+    margin-left: 200px;
+    margin-right: auto;
+    padding-bottom: 100px;
+
+}
+footer{
+
+    height: 100px;
+    background-color: #0A1577;
+    line-height: 20px;
+
+}
+footer > p{
+    color: white;
+    padding-top: 50px;
+}
+
+
+/*signup*/
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+}
+
+form > h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    font-weight: 300;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+button.submitbtn {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+label.label-group {
+    display: block;
+    margin-top: 30px;
+}
+
+label.light {
+    font-weight: 300;
+    display: inline;
+}
+
+.number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+    form {
+        max-width: 480px;
+    }
+
+}
+
+.form-background{
+    background-color: #204d74;
+    margin-top: -20px;
+    height: 100%;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+/*SEARCH*//*SEARCH*/
+/*SEARCH*//*SEARCH*/
+/*SEARCH*//*SEARCH*/
+/*SEARCH*//*SEARCH*/
+
+.search-background{
+    /*background-color: #1B62E5;*/
+    /*background-image: url("/images/pokhara.jpg") ;*/
+    background-attachment: scroll;
+    height: 100%;
+    height: 60vh;
+    width:100%;
+
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
+
+}
+
+
+.row{
+    background-color: #D2DADA;
+}

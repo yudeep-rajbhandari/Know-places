@@ -1,12 +1,19 @@
 
 <div id="map" maps style="width:100%;height:380px;" ng-model="places"></div>
-<div class="body1">
-    <div ng-repeat="place in places">
-        <h1 class="text-center topic">{{place.placeName|uppercase}}</h1>
-        <p>{{place.placeDescription}}</p>
-        {{place.placeAddress}}<br>
-        {{place.latitude}}
-        <img ng-src="{{place.imageLink}}">
+<div class="places">
+    <div class="body1">
+        <div ng-repeat="place in places">
+            <h1 class="text-center topic">{{place.placeName|uppercase}}</h1>
+            <p>{{place.placeDescription}}</p>
+            {{place.placeAddress}}<br>
+            {{place.latitude}}
+
+            <img ng-src="{{place.imageLink}}" width="800px">
+            <h2>How to get here?</h2>
+            {{place.driveway}}
+            <br>
+            <h2>Minimum expense:</h2>{{place.expense}}
+        </div>
+        <button ng-if="role=='admin'" class="btn-danger" ng-click="deleteIt()">delete</button>
     </div>
-    <button ng-click="deleteIt()">delete</button>
 </div>

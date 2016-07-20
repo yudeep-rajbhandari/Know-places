@@ -1,18 +1,16 @@
-<div class="body1" >
+
 
     <div id="map" maps style="width:100%;height:380px;" ng-model="places"></div>
-
-
-
-
-
-    <div ng-repeat="place in places" style="padding-left: auto; background-color: #f1f1f1;">
-        <li style="list-style: none">
-            <div style="line-height: 50px;">
-            <a ui-sref="home.showplaces({placeid:place._id})"><h3>{{place.placeName}}</h3></a>
-            {{place.placeAddress}}
+    <div class="places">
+        <div class="body1" >
+            <div ng-repeat="place in places" style="padding-left: auto; background-color: #f1f1f1;">
+                <li style="list-style: none">
+                    <div style="line-height: 50px;">
+                        <a ui-sref="home.showplaces({placeid:place._id})"><h3>{{place.placeName}}</h3></a>
+                        {{place.placeAddress}}
+                    </div>
+                </li>
             </div>
-
-        </li>
+        </div>
     </div>
-</div>
+

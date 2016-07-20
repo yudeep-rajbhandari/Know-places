@@ -165,7 +165,15 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
                 roles: []
             }
         })
+        .state('home.search', {
 
+            url: '/search',
+            templateUrl: 'templates/search.html',
+            controller:"placeController",
+            data: {
+                roles: []
+            }
+        })
 
 }])
 
@@ -192,8 +200,8 @@ $scope.getInfo=function(){
 
 $scope.check=function(){
     if($scope.formdata.password!=$scope.formdata.password1){
-        toaster.pop("message","both password not same").
-            $scope.button=true;
+
+            $rootScope.button=true;
     }
 }
 
