@@ -14,7 +14,11 @@ var placeSchema = new Schema({
     "imageLink" : {"type" : String},
     "district":{"type": String},
     "categories":{"type":String},
-    "role":{"type":String ,required:true}
+    "role":{"type":String ,required:true},
+    "driveway":{"type":String},
+    "expense":{"type":String},
+    "nearbyHotels":{"type":String}
+
 });
 
 module.exports=mongoose.model('places',placeSchema);
