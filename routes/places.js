@@ -4,7 +4,7 @@
 var express = require('express');
 var router = express.Router();
 var model = require('./../models/places.js');
-var where = require("lodash.where");;
+
 var user = require('./../models/user.js');
 
 /* GET users listing. */
@@ -101,7 +101,7 @@ router.get('/showPlaces12/:placeid',function(req,res,next){
 });
 
 router.get('/showPlaces1/:category',function(req,res,next){
-    model.find({categories:req.params.category},function(err,data){
+    model.find({categories:req.params.category,role:'admin'},function(err,data){
         console.log(req.params.category);
         if(err){
             throw (err)
