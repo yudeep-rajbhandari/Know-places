@@ -64,6 +64,23 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+var port = normalizePort(process.env.PORT || 8080);
+app.listen(port);
 
-app.listen(8080);
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
 console.log("App listening on port 8080");
