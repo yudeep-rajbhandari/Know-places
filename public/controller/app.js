@@ -2,14 +2,14 @@
  * Created by linux on 5/17/16.
  */
 
-var app= angular.module('knowplaces', ['ui.router','BackendService' ,'toaster', 'service.authorization','App.filters','directive.map','directive.map1']);
+var app = angular.module('knowplaces', ['ui.router', 'BackendService', 'toaster', 'service.authorization', 'App.filters', 'directive.map', 'directive.map1']);
 
-app.run(function(principal,$rootScope){
-    principal.identity().then(function(data){
+app.run(function (principal, $rootScope) {
+    principal.identity().then(function (data) {
         console.log(data)
-if(data) {
-    $rootScope.userData = data;
-}
+        if (data) {
+            $rootScope.userData = data;
+        }
     })
 })
 
@@ -22,13 +22,13 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
         // HOME STATES AND NESTED VIEWS =======================================
 
         .state('home', {
-            abstract:true,
+            abstract: true,
             url: '/home',
             templateUrl: 'templates/navbar.html',
             data: {
                 roles: []
             },
-            controller:'signUpController'
+            controller: 'signUpController'
 
         })
         .state('home.homepage', {
@@ -36,7 +36,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
             url: '/homepage',
             templateUrl: 'templates/homepage.html',
 
-            controller:"placeController",
+            controller: "placeController",
             data: {
                 roles: []
             }
@@ -44,12 +44,12 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
         .state('home.about', {
 
-        url: '/about',
-        templateUrl: 'templates/about.html',
+            url: '/about',
+            templateUrl: 'templates/about.html',
             data: {
                 roles: []
             }
-       })
+        })
         .state('home.projects', {
 
             url: '/projects',
@@ -70,7 +70,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
             url: '/login',
             templateUrl: 'templates/login.html',
-            controller:"signUpController",
+            controller: "signUpController",
             data: {
                 roles: []
             }
@@ -103,7 +103,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
             url: '/requestPost/:placeid',
             templateUrl: 'templates/requestPost.html',
-            controller:'RequestController',
+            controller: 'RequestController',
             data: {
                 roles: ['admin']
             }
@@ -114,7 +114,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
             url: '/form',
             templateUrl: 'templates/newform.html',
-            controller:"signUpController",
+            controller: "signUpController",
             data: {
                 roles: []
             }
@@ -123,7 +123,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
             url: '/profile',
             templateUrl: 'templates/profile.html',
-            controller:"signUpController",
+            controller: "signUpController",
             data: {
                 roles: []
             }
@@ -132,7 +132,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
             url: '/addplace',
             templateUrl: 'templates/addplace.html',
-            controller:"placeController",
+            controller: "placeController",
             data: {
                 roles: ['user']
             }
@@ -142,7 +142,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
             url: '/places/:district',
             templateUrl: 'templates/placesList.html',
-            controller:"showplaceController",
+            controller: "showplaceController",
             data: {
                 roles: []
             }
@@ -151,7 +151,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
             url: '/showplaces/:placeid',
             templateUrl: 'templates/places.html',
-            controller:"showplaceController",
+            controller: "showplaceController",
             data: {
                 roles: []
             }
@@ -160,7 +160,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
             url: '/places1/:category',
             templateUrl: 'templates/listC.html',
-            controller:"showplaceController",
+            controller: "showplaceController",
             data: {
                 roles: []
             }
@@ -169,7 +169,7 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
             url: '/search',
             templateUrl: 'templates/search.html',
-            controller:"placeController",
+            controller: "placeController",
             data: {
                 roles: []
             }
@@ -177,97 +177,100 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
 }])
 
-app.controller('signUpController',['$scope', '$http', 'toaster', '$state', 'principal', 'service', '$rootScope','$stateParams',
-    function ($scope, $http, toaster, $state, principal, service, $rootScope,$stateParams) {
-    $scope.formdata={};
-$scope.getInfo=function(){
+app.controller('signUpController', ['$scope', '$http', 'toaster', '$state', 'principal', 'service', '$rootScope', '$stateParams',
+        function ($scope, $http, toaster, $state, principal, service, $rootScope, $stateParams) {
+            $scope.formdata = {};
+            $scope.getInfo = function () {
 
-        service.save({userdata: $scope.formdata}, "/users/signup", function (err, response) {
-            if (!err) {
-                $scope.response = response;
+                service.save({userdata: $scope.formdata}, "/users/signup", function (err, response) {
+                    if (!err) {
+                        $scope.response = response;
 
-                console.log(response);
-                toaster.pop("success","info",response.data.message)
-                $state.go("home.profile");
+                        console.log(response);
+                        toaster.pop("success", "info", response.data.message)
+                        $state.go("home.profile");
 
-            } else {
-                console.log(response);
+                    } else {
+                        console.log(response);
+                    }
+
+                })
+
             }
 
-        })
+            $scope.check = function () {
+                if ($scope.formdata.password != $scope.formdata.password1) {
 
-    }
-
-$scope.check=function(){
-    if($scope.formdata.password!=$scope.formdata.password1){
-
-            $rootScope.button=true;
-    }
-}
-
-    $scope.checkForm = function () {
-        service.save({user: $scope.formdata}, "/users/login", function (err, response) {
-
-            if (!err) {
-
-                if (response.data.user) {
-                    principal.authenticate({userid: response.data.user._id, roles: response.data.user.role,
-                        username:response.data.user.name})
-
-
-
-                    $state.go('home.homepage');
+                    $rootScope.button = true;
                 }
-                else {
-
-                    toaster.pop('success', "oops", "wrong username or password");
-                }
-
-            } else {
-
-                console.log(response);
             }
 
-        })
-    }
-        $scope.Requests=function() {
-            service.get('/places/Requests', function (err, response) {
-                if (err) {
-                    throw(err)
+            $scope.checkForm = function () {
+                service.save({user: $scope.formdata}, "/users/login", function (err, response) {
 
-                }
-                if (!err) {
-                    console.log("<<<<<<")
-                    $scope.seeRequest = response.data.data;
-                    $state.go('home.seeRequest')
-                }
-            })
-        }
+                    if (!err) {
 
-    $scope.logout = function () {
-        console.log('<<<<<<<<<');
-        principal.authenticate(null);
-        $rootScope.userData=null;
+                        if (response.data.user) {
+                            var userData={
+                                userid: response.data.user._id, roles: response.data.user.role,
+                                username: response.data.user.name
+                            }
+                            principal.authenticate(userData);
+
+                            $rootScope.userData=userData;
 
 
-    }
+                            $state.go('home.homepage');
+                        }
+                        else {
+
+                            toaster.pop('success', "oops", "wrong username or password");
+                        }
+
+                    } else {
+
+                        console.log(response);
+                    }
+
+                })
+            }
+            $scope.Requests = function () {
+                service.get('/places/Requests', function (err, response) {
+                    if (err) {
+                        throw(err)
+
+                    }
+                    if (!err) {
+                        console.log("<<<<<<")
+                        $scope.seeRequest = response.data.data;
+                        $state.go('home.seeRequest')
+                    }
+                })
+            }
+
+            $scope.logout = function () {
+                console.log('<<<<<<<<<');
+                principal.authenticate(null);
+                $rootScope.userData = null;
 
 
-}]
+            }
 
+
+        }]
 )
 
-app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'principal', 'service', '$rootScope',
-    function ($scope, $http, toaster, $state, principal, service, $rootScope,directive) {
-        $scope.addplace={};
-        $scope.places=[];
-        $scope.showplace={};
-        $scope.places=[];
-        $scope.districts=["Achham","Arghakhanchi","Baglung","Baitadi","Bajhang","Bajura","Banke","Bara","Bardiya","Bhaktapur","Bhojpur","Chitwan","Dadeldhura","Dailekh","Dang","Darchula","Dhading","Dhankuta","Dhanusa","Dholkha","Dolpa","Doti","Gorkha","Gulmi","Humla","Ilam","Jajarkot","Jhapa","Jumla","Kailali","Kalikot","Kanchanpur","Kapilvastu","Kaski","Kathmandu","Kavrepalanchok","Khotang","Lalitpur","Lamjung","Mahottari","Makwanpur","Manang","Morang","Mugu","Mustang","Myagdi","Nawalparasi","Nuwakot","Okhaldhunga","Palpa","Panchthar","Parbat","Parsa","Pyuthan","Ramechhap","Rasuwa","Rautahat","Rolpa","Rukum","Rupandehi","Salyan","Sankhuwasabha","Saptari","Sarlahi","Sindhuli","Sindhupalchok","Siraha","Solukhumbu","Sunsari","Surkhet","Syangja","Tanahu","Taplejung","Terhathum","Udayapur"];
-        $scope.categories=["rafting","hiking","sightseeing"]
+app.controller('placeController', ['$scope', '$http', 'toaster', '$state', 'principal', 'service', '$rootScope',
+    function ($scope, $http, toaster, $state, principal, service, $rootScope, directive) {
+        $scope.addplace = {};
+        $scope.places = [];
+        $scope.showplace = {};
+        $scope.places = [];
+        $scope.districts = ["Achham", "Arghakhanchi", "Baglung", "Baitadi", "Bajhang", "Bajura", "Banke", "Bara", "Bardiya", "Bhaktapur", "Bhojpur", "Chitwan", "Dadeldhura", "Dailekh", "Dang", "Darchula", "Dhading", "Dhankuta", "Dhanusa", "Dholkha", "Dolpa", "Doti", "Gorkha", "Gulmi", "Humla", "Ilam", "Jajarkot", "Jhapa", "Jumla", "Kailali", "Kalikot", "Kanchanpur", "Kapilvastu", "Kaski", "Kathmandu", "Kavrepalanchok", "Khotang", "Lalitpur", "Lamjung", "Mahottari", "Makwanpur", "Manang", "Morang", "Mugu", "Mustang", "Myagdi", "Nawalparasi", "Nuwakot", "Okhaldhunga", "Palpa", "Panchthar", "Parbat", "Parsa", "Pyuthan", "Ramechhap", "Rasuwa", "Rautahat", "Rolpa", "Rukum", "Rupandehi", "Salyan", "Sankhuwasabha", "Saptari", "Sarlahi", "Sindhuli", "Sindhupalchok", "Siraha", "Solukhumbu", "Sunsari", "Surkhet", "Syangja", "Tanahu", "Taplejung", "Terhathum", "Udayapur"];
+        $scope.categories = ["rafting", "hiking", "sightseeing"]
 
-        $scope.savePlace=function(){
-            service.save(_.assign({addPlaces: $scope.addplace},{userid:$rootScope.data.userid}), "/places/savePlace", function (err, response) {
+        $scope.savePlace = function () {
+            service.save(_.assign({addPlaces: $scope.addplace}, {userid: $rootScope.data.userid}), "/places/savePlace", function (err, response) {
 
                     if (err) {
                         throw (err);
@@ -286,8 +289,8 @@ app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'princ
 
         }
 
-        $scope.addPlace=function() {
-            $scope.addplace.userid=$rootScope.userData.userid;
+        $scope.addPlace = function () {
+            $scope.addplace.userid = $rootScope.userData.userid;
             console.log($scope.addplace)
             service.save({addPlaces: $scope.addplace}, "/places/addPlace",
                 function (err, response) {
@@ -310,26 +313,26 @@ app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'princ
         }
 
 
-       $scope.findPlaces=function(){
-           console.log("<<<<");
+        $scope.findPlaces = function () {
+            console.log("<<<<");
 
-           service.get('/places/findPlace',function(err,response){
-               if(err){
-                   throw (err);
-               }
-           if(!err){
-               $scope.places=response.data.data;
-           }
-           })
-       }
-        $scope.getDistrict=function(){
+            service.get('/places/findPlace', function (err, response) {
+                if (err) {
+                    throw (err);
+                }
+                if (!err) {
+                    $scope.places = response.data.data;
+                }
+            })
+        }
+        $scope.getDistrict = function () {
             console.log("<<<<<<<<<<")
-            service.get('/places/getDistrict',function(err,response){
-                if(err){
+            service.get('/places/getDistrict', function (err, response) {
+                if (err) {
                     throw(err)
                 }
-                if(!err){
-                    $scope.District=response.data.data;
+                if (!err) {
+                    $scope.District = response.data.data;
                     console.log($scope.District);
                 }
             })
@@ -337,74 +340,69 @@ app.controller('placeController',['$scope', '$http', 'toaster', '$state', 'princ
 
     }])
 
-app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 'service','$stateParams','$rootScope',
-    function ($scope, $http, toaster, $state, service, $stateParams,$rootScope) {
-       $scope.places=[];
-        $scope.delete={};
+app.controller('showplaceController', ['$scope', '$http', 'toaster', '$state', 'service', '$stateParams', '$rootScope',
+    function ($scope, $http, toaster, $state, service, $stateParams, $rootScope) {
+        $scope.places = [];
+        $scope.delete = {};
 
 
-
-
-
-        if($stateParams.district){
-        console.log($stateParams.district);
-            service.get('/places/listPlaces/'+$stateParams.district,function(err,response){
-                if(err){
+        if ($stateParams.district) {
+            console.log($stateParams.district);
+            service.get('/places/listPlaces/' + $stateParams.district, function (err, response) {
+                if (err) {
                     throw(err)
                 }
-                if(!err){
-                    $scope.places=response.data.data;
-                    $scope.numbers=$scope.places.length;
+                if (!err) {
+                    $scope.places = response.data.data;
+                    $scope.numbers = $scope.places.length;
 
                 }
             })
         }
 
 
-        if($stateParams.placeid){
+        if ($stateParams.placeid) {
 
-            service.get('/places/showPlaces/'+$stateParams.placeid,function(err,response){
-                if(err){
+            service.get('/places/showPlaces/' + $stateParams.placeid, function (err, response) {
+                if (err) {
                     throw(err)
                 }
-                if(!err){
-                    $scope.places=response.data.data;
-                    $scope.numbers=$scope.places.length;
+                if (!err) {
+                    $scope.places = response.data.data;
+                    $scope.numbers = $scope.places.length;
 
-                    $scope.deleteItem=$stateParams.placeid;
+                    $scope.deleteItem = $stateParams.placeid;
 
                 }
             })
         }
 
-        if($stateParams.category){
+        if ($stateParams.category) {
             console.log($stateParams.category);
-            service.get('/places/showPlaces1/'+$stateParams.category,function(err,response){
-                if(err){
+            service.get('/places/showPlaces1/' + $stateParams.category, function (err, response) {
+                if (err) {
                     throw(err)
                 }
-                if(!err){
-                    $scope.places=response.data.data;
-                    $scope.numbers=$scope.places.length;
+                if (!err) {
+                    $scope.places = response.data.data;
+                    $scope.numbers = $scope.places.length;
                     console.log($scope.places);
-                    $scope.deleteItem=$stateParams.placeid;
+                    $scope.deleteItem = $stateParams.placeid;
 
                 }
             })
         }
 
 
-
-
-        $scope.deleteIt=function(){
+        $scope.deleteIt = function () {
             console.log(">>>>>>")
             console.log($scope.deleteItem);
             service.delete({user: $scope.deleteItem}, "/places/deleteItem", function (err, response) {
-                if(err) {
+                if (err) {
                     throw(err)
                 }
-                if(!err){
-                    toaster.pop("success","item deleted");
+                if (!err) {
+                    toaster.pop("success", "item deleted");
                     console.log(response);
                 }
             })
@@ -412,62 +410,61 @@ app.controller('showplaceController',['$scope', '$http', 'toaster', '$state', 's
 
 
     }
-    ])
-app.controller('RequestController',['$scope', '$http', 'toaster', '$state', 'principal', 'service', '$rootScope','$stateParams',
-    function ($scope, $http, toaster, $state, principal, service, $rootScope,$stateParams) {
+])
+app.controller('RequestController', ['$scope', '$http', 'toaster', '$state', 'principal', 'service', '$rootScope', '$stateParams',
+    function ($scope, $http, toaster, $state, principal, service, $rootScope, $stateParams) {
 
 
-
-        if($stateParams.placeid){
+        if ($stateParams.placeid) {
             console.log('this is');
-            service.get('/places/showPlaces12/'+$stateParams.placeid,function(err,response){
-                if(err){
+            service.get('/places/showPlaces12/' + $stateParams.placeid, function (err, response) {
+                if (err) {
                     throw(err)
                 }
-                if(!err){
-                    $scope.seeRequest=response.data.data;
+                if (!err) {
+                    $scope.seeRequest = response.data.data;
 
 
-                    $scope.deleteItem=$stateParams.placeid;
+                    $scope.deleteItem = $stateParams.placeid;
 
 
                 }
             })
         }
-        $scope.deleteIt=function(){
+        $scope.deleteIt = function () {
             console.log(">>>>>>")
             console.log($scope.deleteItem);
             service.delete({user: $scope.deleteItem}, "/places/deleteItem", function (err, response) {
-                if(err) {
+                if (err) {
                     throw(err)
                 }
-                if(!err){
-                    toaster.pop("success","item deleted");
+                if (!err) {
+                    toaster.pop("success", "item deleted");
                     console.log(response);
                 }
             })
         }
-    $scope.postIt=function(){
-        console.log('postIt')
-        service.put( "/places/updateRequest/"+$scope.deleteItem, function (err, response) {
-            if (!err) {
+        $scope.postIt = function () {
+            console.log('postIt')
+            service.put("/places/updateRequest/" + $scope.deleteItem, function (err, response) {
+                if (!err) {
 
 
-                toaster.pop( 'successful');
-                $rootScope.$broadcast('deleteItem');
+                    toaster.pop('successful');
+                    $rootScope.$broadcast('deleteItem');
 
 
-            } else {
+                } else {
 
-                console.log(response);
-            }
+                    console.log(response);
+                }
 
-        })
+            })
 
+
+        }
 
     }
-
-    }
-    ])
+])
 
 
