@@ -9,6 +9,9 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300' rel='stylesheet' type='text/css'>
+    <style>
+
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -26,8 +29,19 @@
                 <li class="active"><a href="#">KNOW PLACES</a></li>
                 <li ui-sref-active="active"><a ui-sref="home.homepage">Home</a></li>
                 <li ui-sref-active="active"><a ui-sref="home.about">About</a></li>
+
                 <li ui-sref-active="active"><a ui-sref="home.projects">Projects</a></li>
                 <li ui-sref-active="active"><a ui-sref="home.contact">Contact us</a></li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Dropdown <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>abcd</li>
+                        <li>abcd</li>
+                    </ul>
+                </li>
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li ui-sref-active="active" ng-hide="userData"><a ui-sref="home.login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>

@@ -66,15 +66,16 @@
 
 .body1{
     font-family: 'Fira Sans', sans-serif;
-
     max-width: 800px;
+
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
+    border-radius: 15px;
 }
 div.places{
-    background-image: url("/images/sky.jpg");
-    background-attachment: fixed;
+    background-image: url("/images/maxresdefault.jpg");
+    background-attachment:scroll;
     color: #080808;
     height: 100%;
     min-height: 100vh;
@@ -514,4 +515,32 @@ label.light {
 
 .row{
     background-color: #D2DADA;
+}
+
+.placelist{
+    border: 2px solid #02441F;
+    padding-left: auto;
+    border-radius: 30px;
+    text-decoration: no-underline;
+}
+.body2{
+    font-family: 'Fira Sans', sans-serif;
+
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+.placelist:hover{
+    background-color:#2F9073;
+    text-decoration: no-underline;
+    opacity: 0.7;
+}
+.placelist>li>div>a>h3{
+    color: black;
+    font-weight:bold ;
+    text-decoration: no-underline;
+}
+.placelist>li>div>a>h3:hover{
+    text-decoration: no-underline;
 }
