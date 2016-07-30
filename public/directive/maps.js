@@ -11,6 +11,7 @@ angular.module('directive.map', [])
             restrict: 'EA',
             link: function (scope, element, attrs) {
                 var pos={};
+                var bounds = new google.maps.LatLngBounds ();
                 scope.$watch('ngModel',function(newValue,oldValue) {
                     if (newValue.length > 0) {
 

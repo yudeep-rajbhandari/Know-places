@@ -1,11 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KNOW PLACES</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="newpage.css">
+
+</head>
 <div id="background">
-<div id="map" maps style="width:100%;height:380px;" ng-model="places"></div>
+<div id="map" maps12 style="width:100%;height:380px;" ng-model="places"></div>
 <div class="places" >
     <div class="body1">
         <div ng-repeat="place in places">
             <h1 class="text-center topic">{{place.placeName|uppercase}}</h1>
             <p>{{place.placeDescription}}</p>
             {{place.placeAddress}}<br>
+
+            {{location.latitude}}
 
 
             <div style="border: 1px solid black; padding: 5px 5px 5px 5px; border-radius: 5px;">
@@ -21,3 +35,4 @@
     </div>
 </div>
     </div>
+</html>

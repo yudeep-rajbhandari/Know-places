@@ -2,7 +2,7 @@
  * Created by linux on 5/17/16.
  */
 
-var app = angular.module('knowplaces', ['ui.router', 'BackendService', 'toaster', 'service.authorization', 'App.filters', 'directive.map', 'directive.map1']);
+var app = angular.module('knowplaces', ['ui.router', 'BackendService', 'toaster', 'service.authorization', 'App.filters', 'directive.map', 'directive.map1','directive.map12']);
 
 app.run(function (principal, $rootScope) {
     principal.identity().then(function (data) {
@@ -58,6 +58,8 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
                 roles: []
             }
         })
+
+
         .state('home.contact', {
 
             url: '/contact',
@@ -132,6 +134,15 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
 
             url: '/addplace',
             templateUrl: 'templates/addplace.html',
+            controller: "placeController",
+            data: {
+                roles: ['user']
+            }
+        })
+        .state('home.travelQ', {
+
+            url: '/travelQ',
+            templateUrl: 'templates/travelQ.html',
             controller: "placeController",
             data: {
                 roles: ['user']
@@ -264,10 +275,11 @@ app.controller('placeController', ['$scope', '$http', 'toaster', '$state', 'prin
     function ($scope, $http, toaster, $state, principal, service, $rootScope, directive) {
         $scope.addplace = {};
         $scope.places = [];
+        $scope.Traveldetails={};
         $scope.showplace = {};
         $scope.places = [];
         $scope.districts = ["Achham", "Arghakhanchi", "Baglung", "Baitadi", "Bajhang", "Bajura", "Banke", "Bara", "Bardiya", "Bhaktapur", "Bhojpur", "Chitwan", "Dadeldhura", "Dailekh", "Dang", "Darchula", "Dhading", "Dhankuta", "Dhanusa", "Dholkha", "Dolpa", "Doti", "Gorkha", "Gulmi", "Humla", "Ilam", "Jajarkot", "Jhapa", "Jumla", "Kailali", "Kalikot", "Kanchanpur", "Kapilvastu", "Kaski", "Kathmandu", "Kavrepalanchok", "Khotang", "Lalitpur", "Lamjung", "Mahottari", "Makwanpur", "Manang", "Morang", "Mugu", "Mustang", "Myagdi", "Nawalparasi", "Nuwakot", "Okhaldhunga", "Palpa", "Panchthar", "Parbat", "Parsa", "Pyuthan", "Ramechhap", "Rasuwa", "Rautahat", "Rolpa", "Rukum", "Rupandehi", "Salyan", "Sankhuwasabha", "Saptari", "Sarlahi", "Sindhuli", "Sindhupalchok", "Siraha", "Solukhumbu", "Sunsari", "Surkhet", "Syangja", "Tanahu", "Taplejung", "Terhathum", "Udayapur"];
-        $scope.categories = ["rafting", "hiking", "sightseeing"]
+        $scope.categories = ["rafting", "hiking", "sightseeing","NationalPark"]
 
         $scope.savePlace = function () {
             service.save(_.assign({addPlaces: $scope.addplace}, {userid: $rootScope.data.userid}), "/places/savePlace", function (err, response) {
@@ -288,7 +300,19 @@ app.controller('placeController', ['$scope', '$http', 'toaster', '$state', 'prin
             )
 
         }
+$scope.Travel=function(){
 
+    service.save({addTravel:$scope.Traveldetails},'/userPlaces/addtravel',function(err,data){
+
+        if(err){
+            throw(err);
+        }
+        if(!err){
+            toaster.pop("success","successfully added");
+            $state.go("home.homepage");
+        }
+    })
+}
         $scope.addPlace = function () {
             $scope.addplace.userid = $rootScope.userData.userid;
             console.log($scope.addplace)
@@ -311,7 +335,22 @@ app.controller('placeController', ['$scope', '$http', 'toaster', '$state', 'prin
                 }
             )
         }
+$scope.placesaround=function(){
+var position={};
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            console.log(position);
+            console.log(position.coords.latitude);
 
+
+
+    service.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+position.coords.latitude,+position.coords.longitude,'&radius=500&types=food&key=AIzaSyDTyk7Gss0v-3rdc9XZZdCR-3tiLVwWcWk',function(err,response){
+
+    })
+})
+    }
+
+}
 
         $scope.findPlaces = function () {
             console.log("<<<<");
@@ -369,7 +408,10 @@ app.controller('showplaceController', ['$scope', '$http', 'toaster', '$state', '
                 }
                 if (!err) {
                     $scope.places = response.data.data;
-                    $scope.numbers = $scope.places.length;
+                    console.log($scope.places);
+
+                    var location={lat1:$scope.places[0].latitude,lng1:$scope.places[0].longitude};
+                    console.log(location);
 
                     $scope.deleteItem = $stateParams.placeid;
 

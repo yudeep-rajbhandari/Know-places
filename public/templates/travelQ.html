@@ -1,0 +1,171 @@
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300' rel='stylesheet' type='text/css'>
+    <style>
+        input.ng-invalid.ng-dirty.ng-touched{
+            border:1px solid red;
+            color: #F97C7C;
+        }
+        button.ng-disabled{
+            background-color:#9CBF9C ;
+        }
+        label.label-group>span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form  name="frm ">
+
+    <h1>travel Q/A</h1>
+
+
+    <fieldset>
+        <label class="label-group">Your name
+            <input type="text" name="pname" placeholder="place name" ng-model="Traveldetails.userName" required>
+            <span ng-show="frm.pname.$touched && frm.pname.$invalid">Placename is required!!</span>
+            <span ng-show="frm.pname.$touched && frm.pname.$error.required"></span>
+        </label>
+
+        <label class="label-group">your picture
+
+            <input type="text" name="pic" placeholder="pic link" ng-model="Traveldetails.profilepic" required>
+            <span ng-show="frm.desp.$touched && frm.desp.$invalid">Description is required!!</span>
+            <span ng-show="frm.desp.$touched && frm.desp.$error.required"></span>
+        </label>
+
+
+        <label class="label-group">Lattitude
+            <input type="number" name="lat" step="any" ng-model="Traveldetails.latitude" required>
+            <span ng-show="frm.lat.$touched && frm.lat.$invalid">Lattitude is required!!</span>
+            <span ng-show="frm.lat.$touched && frm.lat.$error.required"></span>
+        </label>
+
+
+        <label class="label-group">Longitude
+            <input type="number" name="long" step="any" ng-model="Traveldetails.longitude" required>
+            <span ng-show="frm.long.$touched && frm.long.$invalid">Longitude is required!!</span>
+            <span ng-show="frm.long.$touched && frm.long.$error.required"></span>
+        </label>
+
+
+        <label class="label-group">Where did you visit?
+            <input type="text" name="address" ng-model="Traveldetails.visitedPlace" required>
+            <span ng-show="frm.address.$touched && frm.address.$invalid">Address is required!!</span>
+            <span ng-show="frm.address.$touched && frm.address.$error.required"></span>
+        </label>
+
+
+        <label class="label-group">pic of your visited place
+            <input type="text" name="image" ng-model="Traveldetails.visitedPlacelink" required>
+            <span ng-show="frm.address.$touched && frm.address.$invalid">Image link is required!!</span>
+            <span ng-show="frm.address.$touched && frm.address.$error.required"></span>
+        </label>
+
+
+        <label class="label-group">How did you get there?
+            <textarea name="drive1" placeholder="How to get there?" ng-model="Traveldetails.Travel" required>
+            </textarea>
+            <span ng-show="frm.drive1.$touched && frm.drive1.$invalid">Description is required!!</span>
+            <span ng-show="frm.drive1.$touched && frm.drive1.$error.required"></span>
+        </label>
+        <label class="label-group">pic of your travel-way
+            <textarea name="expense" placeholder="Minimum expense" ng-model="Traveldetails.Travellink" required>
+            </textarea>
+            <span ng-show="frm.expense.$touched && frm.expense.$invalid">Description is required!!</span>
+            <span ng-show="frm.expense.$touched && frm.expense.$error.required"></span>
+        </label>
+        <label class="label-group">Where is the best place to stay?
+            <textarea name="hotel" placeholder="Minimum expense" ng-model="Traveldetails.bestStay" required>
+            </textarea>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$invalid">Description is required!!</span>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$error.required"></span>
+        </label>
+        <label class="label-group">pic of your stay
+            <textarea name="hotel" placeholder="Minimum expense" ng-model="Traveldetails.bestStaylink" required>
+            </textarea>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$invalid">Description is required!!</span>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$error.required"></span>
+        </label>
+
+        <label class="label-group">Best food
+            <textarea name="hotel" placeholder="Minimum expense" ng-model="Traveldetails.Food" required>
+            </textarea>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$invalid">Description is required!!</span>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$error.required"></span>
+        </label>
+
+        <label class="label-group">Best food pic
+            <textarea name="hotel" placeholder="Minimum expense" ng-model="Traveldetails.Foodlink" required>
+            </textarea>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$invalid">Description is required!!</span>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$error.required"></span>
+        </label>
+
+
+
+
+        <label class="label-group">How much money did you spend and on what things?
+            <textarea name="hotel" placeholder="Minimum expense" ng-model="Traveldetails.Fares" required>
+            </textarea>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$invalid">Description is required!!</span>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$error.required"></span>
+        </label>
+
+        <label class="label-group">How difficulties did you face?
+            <textarea name="hotel" placeholder="Minimum expense" ng-model="Traveldetails.Difficulties" required>
+            </textarea>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$invalid">Description is required!!</span>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$error.required"></span>
+        </label>
+
+        <label class="label-group">Describe your journey in a quote
+            <textarea name="hotel" placeholder="Minimum expense" ng-model="Traveldetails.quote" required>
+            </textarea>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$invalid">Description is required!!</span>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$error.required"></span>
+        </label>
+
+        <label class="label-group">What adventures did you do?
+            <textarea name="hotel" placeholder="Minimum expense" ng-model="Traveldetails.Adventures" required>
+            </textarea>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$invalid">Description is required!!</span>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$error.required"></span>
+        </label>
+
+        <label class="label-group">Adventure pic
+            <textarea name="hotel" placeholder="Minimum expense" ng-model="Traveldetails.Adventureslink" required>
+            </textarea>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$invalid">Description is required!!</span>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$error.required"></span>
+        </label>
+
+        <label class="label-group">Rate the place out of 5
+            <textarea name="hotel" placeholder="Minimum expense" ng-model="Traveldetails.Rating" required>
+            </textarea>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$invalid">Description is required!!</span>
+            <span ng-show="frm.hotel.$touched && frm.hotel.$error.required"></span>
+        </label>
+
+
+
+
+
+
+
+
+
+
+    </fieldset>
+    <button class="submitbtn" ng-disabled="frm.$invalid||frm.$untouched" ng-click="Travel()">Save</buttonclass>
+</form>
+
+</body>
