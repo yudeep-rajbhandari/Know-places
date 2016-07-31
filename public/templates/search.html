@@ -20,22 +20,17 @@
             <h1 style=" font-size: 3em"><strong>WHERE ARE YOU  WILLING TO VISIT?</strong></h1>
         </label>
         <div class=" dropdown">
-            <button class="btn btn-info btn-lg btn-block dropdown-toggle" type="button" data-toggle="dropdown" ng-click="getDistrict()">
+            <button class="btn btn-info btn-lg  dropdown-toggle" type="button" data-toggle="dropdown" ng-click="getDistrict()">
                 Find Places<span class="caret"></span>
             </button>
             <ul class="dropdown-menu btn-block scrollable-menu">
-                <li ng-repeat="district in District" ng-model="showplace.place" ><a ui-sref="home.places({district:district})">{{district}}</a></li>
+                <li ng-repeat="district in District" ng-model="showplace.place" style="text-align: center"><a ui-sref="home.places({district:district})">{{district}}</a></li>
 
             </ul>
         </div>
-        <div  >
-            <a ng-if="userData.roles" ui-sref="home.addplace"><button class="btn btn-sm btn-primary" > Add places </button></a>
-        </div>
-
-                    <button ng-click="placesaround()">view places around you</button>
     </div>
 
-<button><a ui-sref="home.travelQ">add tavel</a></button>
+
 
 </div>
 </body>

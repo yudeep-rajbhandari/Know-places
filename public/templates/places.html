@@ -16,19 +16,21 @@
     <div class="body1">
         <div ng-repeat="place in places">
             <h1 class="text-center topic">{{place.placeName|uppercase}}</h1>
+            <br>
             <p>{{place.placeDescription}}</p>
-            {{place.placeAddress}}<br>
-
-            {{location.latitude}}
-
+            <br><br>
+            {{place.placeAddress}}
+            <br>
+            <br>
 
             <div style="border: 1px solid black; padding: 5px 5px 5px 5px; border-radius: 5px;">
                 <img ng-src="{{place.imageLink}}" width="790px">
              </div>
             <h2>How to get here?</h2>
             {{place.driveway}}
-            <br>
+            <br><br>
             <h2>Minimum expense:</h2>{{place.expense}}
+            <br>
             <h2>Where to Stay?</h2>{{place.nearbyHotels}}
         </div>
         <button ng-if="role=='admin'" class="btn-danger" ng-click="deleteIt()">delete</button>

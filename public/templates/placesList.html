@@ -16,10 +16,12 @@
         <div class="body2" >
             <div class="placelist" ng-repeat="place in places" >
                 <li style="list-style: none">
-                    <div style="line-height: 50px;">
-                        <a ui-sref="home.showplaces({placeid:place._id})"><h3>{{place.placeName}}</h3></a>
+                    <a ui-sref="home.showplaces({placeid:place._id})">
+                        <div style="line-height: 50px;">
+                        <h3>{{place.placeName}}</h3>
                         {{place.placeAddress}}
-                    </div>
+                        s</div>
+                    </a>
                 </li>
             </div>
         </div>

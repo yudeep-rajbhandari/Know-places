@@ -67,15 +67,15 @@
 .body1{
     font-family: 'Fira Sans', sans-serif;
     max-width: 800px;
-
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
     border-radius: 15px;
 }
 div.places{
-    background-image: url("/images/maxresdefault.jpg");
+   /* background-image: url("/images/maxresdefault.jpg");*/
     background-attachment:scroll;
+
     color: #080808;
     height: 100%;
     min-height: 100vh;
@@ -85,7 +85,7 @@ div.places{
     text-align: center;
     background-size: cover;
     background-position: center;
-    margin-top: -20px;
+
 
 }
 .topic{
@@ -303,6 +303,10 @@ a#start:hover{
 }
 
 
+ul.imgList{
+    margin-left: 100px;
+    text-align: center;
+}
 .imgList > li {
     display: inline;
     float: left;
@@ -316,9 +320,11 @@ a#start:hover{
     opacity: .8;
     transition: 0.5s ease-in-out;
 }
+
 .imgList > li > a > img:hover {
     opacity: 1;
 }
+
 span{
     float: center;
 }
@@ -358,7 +364,7 @@ span{
 footer{
 
     height: 100px;
-    background-color: #0A1577;
+    background-color: #303030;
     line-height: 20px;
 
 }
@@ -381,7 +387,7 @@ form {
     max-width: 300px;
     margin: 10px auto;
     padding: 10px 20px;
-    background: #f4f7f8;
+    background: #CCCDCE;
     border-radius: 8px;
 }
 
@@ -409,7 +415,7 @@ select {
     outline: 0;
     padding: 15px;
     width: 100%;
-    background-color: #e8eeef;
+    background-color: #F9F9FA;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     font-weight: 300;
@@ -525,22 +531,39 @@ label.light {
 }
 .body2{
     font-family: 'Fira Sans', sans-serif;
-
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
+    margin-bottom:20px ;
 }
 .placelist:hover{
     background-color:#2F9073;
     text-decoration: no-underline;
     opacity: 0.7;
 }
-.placelist>li>div>a>h3{
+.placelist>li>a>div>h3{
     color: black;
     font-weight:bold ;
     text-decoration: no-underline;
 }
-.placelist>li>div>a>h3:hover{
+.placelist>li>a>div>h3:hover{
     text-decoration: no-underline;
 }
+
+.background1{
+   background-color: #1B62E5;
+
+    background-attachment: scroll;
+    height: 100%;
+    height: 100vh;
+    width:100%;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
+
+}
+

@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Logo</a>
+
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -17,15 +17,37 @@
 
                 <li ui-sref-active="active"><a ui-sref="home.projects">Projects</a></li>
                 <li ui-sref-active="active"><a ui-sref="home.contact">Contact us</a></li>
+                <li ui-sref-active="active"><a ui-sref="home.stories">Q & A stories</a></li>
                 <li role="presentation" class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                        Dropdown <span class="caret"></span>
+                        Categories <span class="caret"></span>
                     </a>
+
+
                     <ul class="dropdown-menu">
-                        <li>abcd</li>
-                        <li>abcd</li>
+                        <li ng-repeat="category in categories">
+
+                            <a ui-sref="home.places1({category:category})">
+
+                                <span>{{category}}</span>
+                            </a>
+
+                        </li>
                     </ul>
                 </li>
+                <li  ng-if="userData.roles=='user'" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Share experience <span class="caret"></span>
+                    </a>
+
+
+                    <ul class="dropdown-menu">
+                        <li><a  ui-sref="home.addplace"> Share Places </a></li>
+                        <li><a ui-sref="home.travelQ">Share Stories</a></li>
+                    </ul>
+                </li>
+                <li ng-if="userData.roles=='admin'"><a  ui-sref="home.addplace"> Add Places </a></li>
+
 
             </ul>
             <ul class="nav navbar-nav navbar-right">

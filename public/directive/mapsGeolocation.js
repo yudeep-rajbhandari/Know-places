@@ -8,7 +8,7 @@ angular.module('directive.map1', [])
             link: function (scope, element, attrs) {
                 var pos={};
                 var map = new google.maps.Map(element[0], {
-                    center: {lat: -34.397, lng: 150.644},
+                    center: {lat: 27.6609011, lng:85.4093731},
                     zoom: 15
                 });
 

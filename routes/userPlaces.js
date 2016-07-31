@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/addtravel',function(req,res,next){
-    var travel1=req.body.addtravel;
+    var travel1=req.body.addTravel;
     console.log(travel1);
 
     var addnew = new model(travel1);
@@ -25,6 +25,31 @@ router.post('/addtravel',function(req,res,next){
         }
         else {
             next(err);
+        }
+    })
+})
+
+router.get('/storiesList',function(req,res,next){
+    model.find({},function(err,data){
+        if(err){
+            throw err;
+        }
+    if(data){
+        res.status(200).json({data:data})
+    }
+    })
+})
+
+router.get('/showfullstories/:storiesid',function(req,res,next){
+    console.log('<<<<<');
+
+    console.log(req.params.storiesid)
+    model.find({_id:req.params.storiesid},function(err,data){
+        if(err){
+            throw err;
+        }
+        if(data){
+            res.status(200).json({data:data})
         }
     })
 })

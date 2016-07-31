@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KNOW PLACES</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="newpage.css">
+
+</head>
+<body>
+<div class="body1">
+<div ng-repeat="stories in fullstories">
+    <blockquote  style="font-weight: normal"><h1>"{{stories.quote}}"</h1></blockquote>
+    <br>
+    <br>
+
+    <h3>This is Submitted By :</h3>
+    {{stories.userName}}
+    <br><br>
+
+    <h3>Visited Place:</h3>
+    {{stories.visitedPlace}}<br>
+    <br>
+    <div style="border: 1px solid black; padding: 5px 5px 5px 5px; border-radius: 5px;">
+        <img ng-src="{{stories.visitedPlacelink}}" width="790px">
+    </div>
+    <br>
+    <h3>Visited By:</h3>
+    {{stories.Travel}}<br>
+    <br>
+
+    <h3>I think best place to stay is:</h3>
+    {{stories.bestStay}}<br>
+    <br>
+
+    <h3>Best food I like there :</h3>
+    {{stories.Food}}<br>
+    <br>
+
+    <h3>My total expense:</h3>
+    {{stories.Fares}}<br>
+    <br>
+
+    <h3>Difficulties I faced during  my trip:</h3>
+    {{stories.Difficulties}}<br>
+    <br>
+
+    <h3>Adventures I had my trip:</h3>
+    {{stories.Adventures}}<br>
+    <br>
+
+    <div style="border: 1px solid black; padding: 5px 5px 5px 5px; border-radius: 5px;">
+        <img ng-src="{{stories.Adventureslink}}" width="790px">
+    </div>
+    <br>
+
+
+    <h3>Rating:</h3>
+    {{stories.Rating}}<br>
+
+
+
+</div></div>
+</body></html>

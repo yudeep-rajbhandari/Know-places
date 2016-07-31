@@ -77,6 +77,25 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
                 roles: []
             }
         })
+        .state('home.showfullStories', {
+
+            url: '/showstories/:storiesid',
+            templateUrl: 'templates/showfullStories.html',
+            controller: "showplaceController",
+            data: {
+                roles: []
+            }
+        })
+
+        .state('home.storylist', {
+
+            url: '/storylist',
+            templateUrl: 'templates/storylist.html',
+            controller: "showplaceController",
+            data: {
+                roles: []
+            }
+        })
 
         .state('home.dhulikhel', {
 
@@ -167,6 +186,16 @@ app.config(["$stateProvider", "$urlRouterProvider", "$httpProvider", function ($
                 roles: []
             }
         })
+
+        .state('home.stories', {
+
+            url: '/stories',
+            templateUrl: 'templates/stories.html',
+            controller: "showplaceController",
+            data: {
+                roles: []
+            }
+        })
         .state('home.places1', {
 
             url: '/places1/:category',
@@ -212,8 +241,9 @@ app.controller('signUpController', ['$scope', '$http', 'toaster', '$state', 'pri
             $scope.check = function () {
                 if ($scope.formdata.password != $scope.formdata.password1) {
 
-                    $rootScope.button = true;
+                    $rootScope.pass12 = true;
                 }
+
             }
 
             $scope.checkForm = function () {
@@ -279,7 +309,7 @@ app.controller('placeController', ['$scope', '$http', 'toaster', '$state', 'prin
         $scope.showplace = {};
         $scope.places = [];
         $scope.districts = ["Achham", "Arghakhanchi", "Baglung", "Baitadi", "Bajhang", "Bajura", "Banke", "Bara", "Bardiya", "Bhaktapur", "Bhojpur", "Chitwan", "Dadeldhura", "Dailekh", "Dang", "Darchula", "Dhading", "Dhankuta", "Dhanusa", "Dholkha", "Dolpa", "Doti", "Gorkha", "Gulmi", "Humla", "Ilam", "Jajarkot", "Jhapa", "Jumla", "Kailali", "Kalikot", "Kanchanpur", "Kapilvastu", "Kaski", "Kathmandu", "Kavrepalanchok", "Khotang", "Lalitpur", "Lamjung", "Mahottari", "Makwanpur", "Manang", "Morang", "Mugu", "Mustang", "Myagdi", "Nawalparasi", "Nuwakot", "Okhaldhunga", "Palpa", "Panchthar", "Parbat", "Parsa", "Pyuthan", "Ramechhap", "Rasuwa", "Rautahat", "Rolpa", "Rukum", "Rupandehi", "Salyan", "Sankhuwasabha", "Saptari", "Sarlahi", "Sindhuli", "Sindhupalchok", "Siraha", "Solukhumbu", "Sunsari", "Surkhet", "Syangja", "Tanahu", "Taplejung", "Terhathum", "Udayapur"];
-        $scope.categories = ["rafting", "hiking", "sightseeing","NationalPark"]
+        $rootScope.categories = ["rafting", "hiking", "sightseeing","NationalPark"]
 
         $scope.savePlace = function () {
             service.save(_.assign({addPlaces: $scope.addplace}, {userid: $rootScope.data.userid}), "/places/savePlace", function (err, response) {
@@ -300,8 +330,8 @@ app.controller('placeController', ['$scope', '$http', 'toaster', '$state', 'prin
             )
 
         }
-$scope.Travel=function(){
-
+$scope.Traveldiaries=function(){
+console.log($scope.Traveldetails);
     service.save({addTravel:$scope.Traveldetails},'/userPlaces/addtravel',function(err,data){
 
         if(err){
@@ -398,6 +428,33 @@ app.controller('showplaceController', ['$scope', '$http', 'toaster', '$state', '
                 }
             })
         }
+        if ($stateParams.storiesid) {
+            console.log($stateParams.storiesid);
+            service.get('/userPlaces/showfullstories/' + $stateParams.storiesid, function (err, response) {
+                if (err) {
+                    throw(err)
+                }
+                if (!err) {
+                    $scope.fullstories = response.data.data;
+
+
+                    $scope.deleteItem = $stateParams.storiesid;
+
+
+                }
+            })
+        }
+        $scope.showstories=function(){
+
+            service.get('/userPlaces/storiesList',function(err,response){
+                if(err){
+                    throw (err)
+                }
+                if(!err){
+                    $rootScope.storiesList=response.data.data;
+                }
+            })
+        }
 
 
         if ($stateParams.placeid) {
@@ -473,6 +530,8 @@ app.controller('RequestController', ['$scope', '$http', 'toaster', '$state', 'pr
                 }
             })
         }
+
+
         $scope.deleteIt = function () {
             console.log(">>>>>>")
             console.log($scope.deleteItem);
