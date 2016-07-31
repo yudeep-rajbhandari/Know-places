@@ -241,7 +241,7 @@ app.controller('signUpController', ['$scope', '$http', 'toaster', '$state', 'pri
             $scope.check = function () {
                 if ($scope.formdata.password != $scope.formdata.password1) {
 
-                    $rootScope.pass12 = true;
+                    $scope.pass12 = true;
                 }
 
             }

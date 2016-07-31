@@ -72,11 +72,13 @@
             </label>
 
             <label class="label-group">Password:
-                <input type="password" placeholder="Re-enter password" ng-model="formdata.password1" ng-change="check()">
+                <input type="password" name="password1" placeholder="Re-enter password" ng-model="formdata.password1" ng-change="check()">
+                <span ng-show="formdata.password!=formdata.password1 && frm.password1.$dirty">password mismatch</span>
+
             </label>
 
         </fieldset>
-        <button class="submitbtn" ng-disabled="frm.$invalid||frm.$untouched|| pass12 =='true'" ng-click="getInfo()">Sign Up</button>
+        <button class="submitbtn" ng-disabled="frm.$invalid||frm.$untouched|| formdata.password!=formdata.password1" ng-click="getInfo()">Sign Up</button>
     </form>
 </div>
 </body>
