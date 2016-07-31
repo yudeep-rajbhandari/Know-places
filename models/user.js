@@ -25,7 +25,9 @@ userSchema.methods.compare=function(password,callback){
     console.log((password));
     callback( this.password==password);
 
-
+    var hash=function(password,callback){
+        callback(md5(password));
+    }
 
 
 }

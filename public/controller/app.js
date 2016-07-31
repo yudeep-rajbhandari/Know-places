@@ -455,6 +455,7 @@ app.controller('showplaceController', ['$scope', '$http', 'toaster', '$state', '
                 }
             })
         }
+        $scope.showstories();
 
 
         if ($stateParams.placeid) {
