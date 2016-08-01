@@ -504,6 +504,22 @@ app.controller('showplaceController', ['$scope', '$http', 'toaster', '$state', '
                 if (!err) {
                     toaster.pop("success", "item deleted");
                     console.log(response);
+                    $state.go('home.search')
+                }
+            })
+        }
+
+        $scope.deleteIt1 = function () {
+            console.log(">>>>>>")
+            console.log($scope.deleteItem);
+            service.delete({user: $scope.deleteItem}, "/userPlaces/deleteItem1", function (err, response) {
+                if (err) {
+                    throw(err)
+                }
+                if (!err) {
+                    toaster.pop("success", "item deleted");
+                    console.log(response);
+                    $state.go('home.search')
                 }
             })
         }
@@ -543,6 +559,7 @@ app.controller('RequestController', ['$scope', '$http', 'toaster', '$state', 'pr
                 if (!err) {
                     toaster.pop("success", "item deleted");
                     console.log(response);
+                    $state.go('home.search')
                 }
             })
         }

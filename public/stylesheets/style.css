@@ -305,11 +305,12 @@ a#start:hover{
 
 ul.imgList{
     margin-left: 100px;
-    text-align: center;
+
 }
 .imgList > li {
-    display: inline;
-    float: left;
+    list-style: none;
+    display: inline block;
+
     margin: 0 10px 20px;
     width: 300px;
 }

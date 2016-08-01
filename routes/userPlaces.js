@@ -53,6 +53,19 @@ router.get('/showfullstories/:storiesid',function(req,res,next){
         }
     })
 })
+router.post('/deleteItem1',function(req,res,next){
+    console.log(req.body.user);
+    model.remove({ _id:req.body.user },function(err){
+
+        if(err) {
+            throw(err)
+        }
+
+        if(!err){
+            res.status(200).json({message:'successfully deleted'})
+        }
+    })
+})
 
 
 module.exports = router;
